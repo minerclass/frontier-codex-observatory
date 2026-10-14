@@ -26,7 +26,7 @@ def script_json(value):
 def build(root=ROOT):
     root=Path(root).resolve()
     data=read_json(root/'data.json'); validate(data)
-    charts={path.stem:path.read_text(encoding='utf-8') for path in (root/'charts').glob('*.html')}
+    charts={path.stem:path.read_text(encoding='utf-8') for path in sorted((root/'charts').glob('*.html'), key=lambda path: path.name)}
     if len(charts)!=7:
         raise ValueError('The seven saved chart/receipt files are required.')
     hashes=read_json(root/'archive'/'initial-file-hashes.json')

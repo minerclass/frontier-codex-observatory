@@ -2,11 +2,14 @@ from copy import deepcopy
 from pathlib import Path
 import sys
 import unittest
+from unittest.mock import patch
+import tempfile
+import shutil
 
 ROOT=Path(__file__).resolve().parent.parent
 sys.path.insert(0,str(ROOT/'tools'))
 from validate_data import validate,read_json,ValidationError
-from build import resolve_output,script_json
+from build import build,resolve_output,script_json
 
 class RecordsTests(unittest.TestCase):
     def setUp(self):
@@ -55,5 +58,23 @@ class RecordsTests(unittest.TestCase):
         for output in ('.','../other','charts','tools'):
             with self.assertRaises(ValueError): resolve_output(ROOT,Path(output))
         self.assertNotIn('</script>',script_json({'note':'</script><script>alert(1)</script>'}))
+
+class DeterministicBuildTests(unittest.TestCase):
+    def test_chart_enumeration_order_does_not_change_public_html(self):
+        # Windows and Linux can enumerate the seven archived charts differently.
+        with tempfile.TemporaryDirectory(prefix='observatory-test-',dir=ROOT/'tests') as temporary:
+            fixture=Path(temporary).resolve()
+            self.assertTrue(fixture.is_relative_to((ROOT/'tests').resolve()))
+            for name in ('data.json','atlas-submission.json','NOTES.md'):
+                shutil.copyfile(ROOT/name,fixture/name)
+            for name in ('charts','archive','web','snapshots'):
+                shutil.copytree(ROOT/name,fixture/name)
+            destination,_=build(fixture)
+            first=(destination/'index.html').read_bytes()
+            original_glob=Path.glob
+            with patch.object(Path,'glob',autospec=True,
+                    side_effect=lambda directory,pattern: iter(reversed(list(original_glob(directory,pattern))))):
+                build(fixture)
+            self.assertEqual(first,(destination/'index.html').read_bytes())
 
 if __name__=='__main__': unittest.main()
