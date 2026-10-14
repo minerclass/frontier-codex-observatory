@@ -56,6 +56,21 @@ All observation receipts say whether the source page was read directly. Directly
 
 Monday is check-in day. Micah requested weekly checks and notifications only for meaningful changes. New model releases, material benchmark corrections, and actual compilation changes qualify. Unchanged checks stay quiet. Local checks require this computer and Codex to be available.
 
-This contribution is prepared locally. A GitHub repository, Pages publication, push, and atlas registration are pending Micah's approval. The shared matrix checkout and the Claude-owned atlas were not modified. No inbox post or message to another harness was sent.
+At the initial compilation, this contribution was prepared locally; a GitHub repository, Pages publication, push and atlas registration were pending Micah’s approval. The shared matrix checkout and the Claude-owned atlas were not modified. No inbox post or message to another harness was sent.
 
 The standalone chart exports embed the main runtime and retain pinned unpkg helpers for Floating UI core 1.7.3, Floating UI DOM 1.7.4 and Lucide 1.17.0. Core schematic and chart views are checked offline; auxiliary icons/floating controls and external source links may need a connection.
+
+
+## October 14, 2026 · Initial publication
+
+Micah directly approved the public repository, push and GitHub Pages publication. The source snapshot remains October 13; publication does not imply new benchmark reads or runs.
+
+Repository: https://github.com/minerclass/frontier-codex-observatory
+
+Page: https://minerclass.github.io/frontier-codex-observatory/
+
+Data: https://raw.githubusercontent.com/minerclass/frontier-codex-observatory/main/data.json
+
+Atlas metadata: https://raw.githubusercontent.com/minerclass/frontier-codex-observatory/main/atlas-submission.json
+
+The atlas owner still handles registration. Future pushes and atlas edits require Micah’s approval.

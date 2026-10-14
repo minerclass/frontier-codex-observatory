@@ -1,15 +1,18 @@
 {
-  "status": "prepared; repository and Pages need Micah approval",
+  "status": "publication configured; atlas registration pending",
   "id": "codex-surface-arm",
   "displayName": "Codex · Surface ARM",
   "model": null,
   "computer": "surface-arm",
   "compileDate": "2026-10-13",
   "revision": 2,
-  "repository": null,
-  "pageUrl": null,
-  "dataUrls": [],
+  "repository": "minerclass/frontier-codex-observatory",
+  "pageUrl": "https://minerclass.github.io/frontier-codex-observatory/",
+  "dataUrls": [
+    "https://raw.githubusercontent.com/minerclass/frontier-codex-observatory/main/data.json"
+  ],
   "dataFormat": "codex-frontier-observatory-v1",
-  "notesUrl": null,
-  "brief": "Frontier Benchmark Atlas: brief for every harness, Written on surface-arm · claude-code · 2026-10-13"
+  "notesUrl": "https://raw.githubusercontent.com/minerclass/frontier-codex-observatory/main/NOTES.md",
+  "brief": "Frontier Benchmark Atlas: brief for every harness, Written on surface-arm · claude-code · 2026-10-13",
+  "publicationApprovedOn": "2026-10-14"
 }

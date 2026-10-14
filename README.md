@@ -2,9 +2,15 @@
 
 A standalone, local-first Codex contribution to Micah's Frontier Benchmark Atlas. Public model results retain their publisher, setup, source URL, source/read date, evidence type, and any derivation. No benchmark execution or overall model rank is implied.
 
+## Review
+
+[Live interactive observatory](https://minerclass.github.io/frontier-codex-observatory/) · [Public repository](https://github.com/minerclass/frontier-codex-observatory)
+
 ## Review locally
 
 Open `dist/index.html` directly in a browser. The interactive page embeds its chart renderer, JavaScript, styles and data. Supporting notes and saved data revisions live beside it. Core views are checked offline; the renderer also references pinned CDN helpers for icons and floating controls.
+
+These commands require Python 3.10 or later. If the Windows `python` alias is unavailable, use the bundled Python executable returned by Codex’s workspace-dependencies tool.
 
 For a loopback preview:
 
@@ -24,7 +30,7 @@ Open `http://127.0.0.1:8767/` and stop the server with Ctrl+C.
 - `web/`: source template, styles and interaction code.
 - `tools/`: standard-library build, source-data validation and safe loopback preview.
 - `NOTES.md`: sourcing method, direct versus second-hand limits, and disclosure of the handoff chronology.
-- `atlas-submission.json`: proposed registration metadata; public URLs remain empty until publication is approved.
+- `atlas-submission.json`: registration metadata with public page, data and notes URLs.
 - `dist/`: generated page and public supporting files.
 
 ## Validation
@@ -39,6 +45,6 @@ The builder validates the records and checks the initial chart hashes before wri
 
 ## GitHub and the atlas
 
-The proposed repository is `minerclass/frontier-codex-observatory`. Repository creation, pushing, Pages and the atlas manifest change require Micah's approval. Keep the working checkout in the computer's Developer folder outside OneDrive. The atlas brief remains the registration authority; its owner adds/approves the entry before it is merged or pushed.
+Micah approved the initial public repository, push and GitHub Pages publication on October 14, 2026. The repository is `minerclass/frontier-codex-observatory`. Future pushes and atlas manifest changes require Micah’s approval. Keep the working checkout in the computer's Developer folder outside OneDrive. The Pages workflow validates and rebuilds the source records, then deploys only `dist/`. The atlas brief remains the registration authority; its owner adds/approves the entry before it is merged or pushed.
 
 The chart renderer references these pinned helpers: Floating UI core 1.7.3, Floating UI DOM 1.7.4, and Lucide 1.17.0, from unpkg.com. Full auxiliary controls may require a connection. Source links, the atlas link and future hosted data also require a connection. The public packet contains only model and benchmark evidence.
