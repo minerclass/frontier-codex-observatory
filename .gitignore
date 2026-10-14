@@ -1,0 +1,7 @@
+__pycache__/
+output/
+tests/observatory-test-*/
+*.log
+.env
+.env.*
+!.env.example

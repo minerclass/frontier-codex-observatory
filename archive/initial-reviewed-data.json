@@ -1,0 +1,780 @@
+{
+  "models": [
+    "Gemini 4 Argon",
+    "Grok 4.7",
+    "Grok 4.6",
+    "Grok 4.5",
+    "Composer 2.5",
+    "GPT-6.1 Sol",
+    "GPT-6 Astra",
+    "GPT-6 Sol",
+    "GPT-6 Luna",
+    "Claude Opus 5.5",
+    "Claude Sonnet 5.5",
+    "Claude Haiku 5.5",
+    "Claude Fable 5.1",
+    "Muse Wonder Full",
+    "Muse Wonder",
+    "Muse Spark 1.3 Max",
+    "Muse Spark 1.3"
+  ],
+  "rows": [
+    {
+      "model": "Gemini 4 Argon",
+      "family": "Google",
+      "benchmark": "Terminal 4.0",
+      "score": 57.58,
+      "cost": 17.64,
+      "minutes": 53.583,
+      "harness": "mini-swe-agent",
+      "sourceKey": "terminal"
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "family": "Google",
+      "benchmark": "Finance v2",
+      "score": 65.4,
+      "cost": 4.38,
+      "minutes": 16.35,
+      "harness": "Vals Finance Agent v2",
+      "sourceKey": "finance"
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "family": "Google",
+      "benchmark": "Harvey legal",
+      "score": 19.58,
+      "cost": 10.55,
+      "minutes": 43.917,
+      "harness": "Harvey generation protocol",
+      "sourceKey": "legal"
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "family": "Google",
+      "benchmark": "Web apps v1.1",
+      "score": 91.91,
+      "cost": 8.11,
+      "minutes": 37.467,
+      "harness": "OpenHands",
+      "sourceKey": "apps"
+    },
+    {
+      "model": "Grok 4.7",
+      "family": "Cursor / Grok",
+      "benchmark": "Terminal 4.0",
+      "score": 28.79,
+      "cost": 18.01,
+      "minutes": 50.133,
+      "harness": "mini-swe-agent",
+      "sourceKey": "terminal"
+    },
+    {
+      "model": "Grok 4.7",
+      "family": "Cursor / Grok",
+      "benchmark": "Finance v2",
+      "score": 52.25,
+      "cost": 2.72,
+      "minutes": 15.55,
+      "harness": "Vals Finance Agent v2",
+      "sourceKey": "finance"
+    },
+    {
+      "model": "Grok 4.7",
+      "family": "Cursor / Grok",
+      "benchmark": "Harvey legal",
+      "score": 12.5,
+      "cost": 11.13,
+      "minutes": 42.083,
+      "harness": "Harvey generation protocol",
+      "sourceKey": "legal"
+    },
+    {
+      "model": "Grok 4.7",
+      "family": "Cursor / Grok",
+      "benchmark": "Web apps v1.1",
+      "score": 86.17,
+      "cost": 15.83,
+      "minutes": 35.783,
+      "harness": "OpenHands",
+      "sourceKey": "apps"
+    },
+    {
+      "model": "Grok 4.6",
+      "family": "Cursor / Grok",
+      "benchmark": "Terminal 4.0",
+      "score": 17.17,
+      "cost": 5.06,
+      "minutes": 29.417,
+      "harness": "mini-swe-agent",
+      "sourceKey": "terminal"
+    },
+    {
+      "model": "Grok 4.6",
+      "family": "Cursor / Grok",
+      "benchmark": "Finance v2",
+      "score": 53.68,
+      "cost": 1.66,
+      "minutes": 16.683,
+      "harness": "Vals Finance Agent v2",
+      "sourceKey": "finance"
+    },
+    {
+      "model": "Grok 4.6",
+      "family": "Cursor / Grok",
+      "benchmark": "Harvey legal",
+      "score": 15.83,
+      "cost": 4.01,
+      "minutes": 45.083,
+      "harness": "Harvey generation protocol",
+      "sourceKey": "legal"
+    },
+    {
+      "model": "Grok 4.6",
+      "family": "Cursor / Grok",
+      "benchmark": "Web apps v1.1",
+      "score": 76.24,
+      "cost": 4.88,
+      "minutes": 25.5,
+      "harness": "OpenHands",
+      "sourceKey": "apps"
+    },
+    {
+      "model": "Grok 4.5",
+      "family": "Cursor / Grok",
+      "benchmark": "Terminal 4.0",
+      "score": 8.59,
+      "cost": 5.52,
+      "minutes": 33.717,
+      "harness": "mini-swe-agent",
+      "sourceKey": "terminal"
+    },
+    {
+      "model": "Grok 4.5",
+      "family": "Cursor / Grok",
+      "benchmark": "Finance v2",
+      "score": 48.35,
+      "cost": 1.16,
+      "minutes": 4.817,
+      "harness": "Vals Finance Agent v2",
+      "sourceKey": "finance"
+    },
+    {
+      "model": "Grok 4.5",
+      "family": "Cursor / Grok",
+      "benchmark": "Harvey legal",
+      "score": 12.92,
+      "cost": 2.02,
+      "minutes": 10.25,
+      "harness": "Harvey generation protocol",
+      "sourceKey": "legal"
+    },
+    {
+      "model": "Grok 4.5",
+      "family": "Cursor / Grok",
+      "benchmark": "Web apps v1.1",
+      "score": 69,
+      "cost": 4.1,
+      "minutes": 13.833,
+      "harness": "OpenHands",
+      "sourceKey": "apps"
+    },
+    {
+      "model": "Composer 2.5",
+      "family": "Cursor / Grok",
+      "benchmark": "Terminal 4.0",
+      "score": null,
+      "cost": null,
+      "minutes": null,
+      "harness": "mini-swe-agent",
+      "sourceKey": "terminal"
+    },
+    {
+      "model": "Composer 2.5",
+      "family": "Cursor / Grok",
+      "benchmark": "Finance v2",
+      "score": null,
+      "cost": null,
+      "minutes": null,
+      "harness": "Vals Finance Agent v2",
+      "sourceKey": "finance"
+    },
+    {
+      "model": "Composer 2.5",
+      "family": "Cursor / Grok",
+      "benchmark": "Harvey legal",
+      "score": null,
+      "cost": null,
+      "minutes": null,
+      "harness": "Harvey generation protocol",
+      "sourceKey": "legal"
+    },
+    {
+      "model": "Composer 2.5",
+      "family": "Cursor / Grok",
+      "benchmark": "Web apps v1.1",
+      "score": 49.61,
+      "cost": 0.5,
+      "minutes": 9.883,
+      "harness": "Cursor CLI",
+      "sourceKey": "apps"
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "family": "OpenAI",
+      "benchmark": "Terminal 4.0",
+      "score": 55.05,
+      "cost": 1.72,
+      "minutes": 45.2,
+      "harness": "mini-swe-agent",
+      "sourceKey": "terminal"
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "family": "OpenAI",
+      "benchmark": "Finance v2",
+      "score": 52.03,
+      "cost": 1.62,
+      "minutes": 15.417,
+      "harness": "Vals Finance Agent v2",
+      "sourceKey": "finance"
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "family": "OpenAI",
+      "benchmark": "Harvey legal",
+      "score": 5.42,
+      "cost": 3.93,
+      "minutes": 43.233,
+      "harness": "Harvey generation protocol",
+      "sourceKey": "legal"
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "family": "OpenAI",
+      "benchmark": "Web apps v1.1",
+      "score": 88.93,
+      "cost": 6.23,
+      "minutes": 75,
+      "harness": "OpenHands",
+      "sourceKey": "apps"
+    },
+    {
+      "model": "GPT-6 Astra",
+      "family": "OpenAI",
+      "benchmark": "Terminal 4.0",
+      "score": 59.6,
+      "cost": 9.58,
+      "minutes": 35.7,
+      "harness": "mini-swe-agent",
+      "sourceKey": "terminal"
+    },
+    {
+      "model": "GPT-6 Astra",
+      "family": "OpenAI",
+      "benchmark": "Finance v2",
+      "score": 53.54,
+      "cost": 6.82,
+      "minutes": 11.55,
+      "harness": "Vals Finance Agent v2",
+      "sourceKey": "finance"
+    },
+    {
+      "model": "GPT-6 Astra",
+      "family": "OpenAI",
+      "benchmark": "Harvey legal",
+      "score": 5.42,
+      "cost": 26.16,
+      "minutes": 24.817,
+      "harness": "Harvey generation protocol",
+      "sourceKey": "legal"
+    },
+    {
+      "model": "GPT-6 Astra",
+      "family": "OpenAI",
+      "benchmark": "Web apps v1.1",
+      "score": 89.59,
+      "cost": 38.51,
+      "minutes": 39.067,
+      "harness": "OpenHands",
+      "sourceKey": "apps"
+    },
+    {
+      "model": "GPT-6 Sol",
+      "family": "OpenAI",
+      "benchmark": "Terminal 4.0",
+      "score": 44.44,
+      "cost": 5.79,
+      "minutes": 34.933,
+      "harness": "mini-swe-agent",
+      "sourceKey": "terminal"
+    },
+    {
+      "model": "GPT-6 Sol",
+      "family": "OpenAI",
+      "benchmark": "Finance v2",
+      "score": 49.05,
+      "cost": 2.12,
+      "minutes": 9,
+      "harness": "Vals Finance Agent v2",
+      "sourceKey": "finance"
+    },
+    {
+      "model": "GPT-6 Sol",
+      "family": "OpenAI",
+      "benchmark": "Harvey legal",
+      "score": 1.67,
+      "cost": 3.36,
+      "minutes": 13.667,
+      "harness": "Harvey generation protocol",
+      "sourceKey": "legal"
+    },
+    {
+      "model": "GPT-6 Sol",
+      "family": "OpenAI",
+      "benchmark": "Web apps v1.1",
+      "score": 87.82,
+      "cost": 26.36,
+      "minutes": 38.933,
+      "harness": "OpenHands",
+      "sourceKey": "apps"
+    },
+    {
+      "model": "GPT-6 Luna",
+      "family": "OpenAI",
+      "benchmark": "Terminal 4.0",
+      "score": 13.64,
+      "cost": 0.35,
+      "minutes": 32.767,
+      "harness": "mini-swe-agent",
+      "sourceKey": "terminal"
+    },
+    {
+      "model": "GPT-6 Luna",
+      "family": "OpenAI",
+      "benchmark": "Finance v2",
+      "score": 49.87,
+      "cost": 0.12,
+      "minutes": 14.967,
+      "harness": "Vals Finance Agent v2",
+      "sourceKey": "finance"
+    },
+    {
+      "model": "GPT-6 Luna",
+      "family": "OpenAI",
+      "benchmark": "Harvey legal",
+      "score": 2.92,
+      "cost": 0.3,
+      "minutes": 17.533,
+      "harness": "Harvey generation protocol",
+      "sourceKey": "legal"
+    },
+    {
+      "model": "GPT-6 Luna",
+      "family": "OpenAI",
+      "benchmark": "Web apps v1.1",
+      "score": 81.65,
+      "cost": 1.35,
+      "minutes": 37,
+      "harness": "OpenHands",
+      "sourceKey": "apps"
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "family": "Anthropic",
+      "benchmark": "Terminal 4.0",
+      "score": 65.15,
+      "cost": 13.2,
+      "minutes": 64,
+      "harness": "mini-swe-agent",
+      "sourceKey": "terminal"
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "family": "Anthropic",
+      "benchmark": "Finance v2",
+      "score": 58.59,
+      "cost": 9.22,
+      "minutes": 33.133,
+      "harness": "Vals Finance Agent v2",
+      "sourceKey": "finance"
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "family": "Anthropic",
+      "benchmark": "Harvey legal",
+      "score": 3.75,
+      "cost": 21.38,
+      "minutes": 52.917,
+      "harness": "Harvey generation protocol",
+      "sourceKey": "legal"
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "family": "Anthropic",
+      "benchmark": "Web apps v1.1",
+      "score": 90.29,
+      "cost": 57.92,
+      "minutes": 96,
+      "harness": "OpenHands",
+      "sourceKey": "apps"
+    },
+    {
+      "model": "Claude Sonnet 5.5",
+      "family": "Anthropic",
+      "benchmark": "Terminal 4.0",
+      "score": 64.14,
+      "cost": 16.51,
+      "minutes": 82,
+      "harness": "mini-swe-agent",
+      "sourceKey": "terminal"
+    },
+    {
+      "model": "Claude Sonnet 5.5",
+      "family": "Anthropic",
+      "benchmark": "Finance v2",
+      "score": 58.1,
+      "cost": 6.55,
+      "minutes": 31.717,
+      "harness": "Vals Finance Agent v2",
+      "sourceKey": "finance"
+    },
+    {
+      "model": "Claude Sonnet 5.5",
+      "family": "Anthropic",
+      "benchmark": "Harvey legal",
+      "score": 2.92,
+      "cost": 16.61,
+      "minutes": 57.733,
+      "harness": "Harvey generation protocol",
+      "sourceKey": "legal"
+    },
+    {
+      "model": "Claude Sonnet 5.5",
+      "family": "Anthropic",
+      "benchmark": "Web apps v1.1",
+      "score": 92.39,
+      "cost": 31.25,
+      "minutes": 61,
+      "harness": "OpenHands",
+      "sourceKey": "apps"
+    },
+    {
+      "model": "Claude Haiku 5.5",
+      "family": "Anthropic",
+      "benchmark": "Terminal 4.0",
+      "score": 36.36,
+      "cost": 3.12,
+      "minutes": 51.933,
+      "harness": "mini-swe-agent",
+      "sourceKey": "terminal"
+    },
+    {
+      "model": "Claude Haiku 5.5",
+      "family": "Anthropic",
+      "benchmark": "Finance v2",
+      "score": 54.14,
+      "cost": 1.64,
+      "minutes": 30.817,
+      "harness": "Vals Finance Agent v2",
+      "sourceKey": "finance"
+    },
+    {
+      "model": "Claude Haiku 5.5",
+      "family": "Anthropic",
+      "benchmark": "Harvey legal",
+      "score": 1.25,
+      "cost": 3.39,
+      "minutes": 35.233,
+      "harness": "Harvey generation protocol",
+      "sourceKey": "legal"
+    },
+    {
+      "model": "Claude Haiku 5.5",
+      "family": "Anthropic",
+      "benchmark": "Web apps v1.1",
+      "score": 90.44,
+      "cost": 6.07,
+      "minutes": 34.6,
+      "harness": "OpenHands",
+      "sourceKey": "apps"
+    },
+    {
+      "model": "Claude Fable 5.1",
+      "family": "Anthropic",
+      "benchmark": "Terminal 4.0",
+      "score": 58.08,
+      "cost": 17.18,
+      "minutes": 60,
+      "harness": "mini-swe-agent",
+      "sourceKey": "terminal"
+    },
+    {
+      "model": "Claude Fable 5.1",
+      "family": "Anthropic",
+      "benchmark": "Finance v2",
+      "score": 58.88,
+      "cost": 8.35,
+      "minutes": 18.233,
+      "harness": "Vals Finance Agent v2",
+      "sourceKey": "finance"
+    },
+    {
+      "model": "Claude Fable 5.1",
+      "family": "Anthropic",
+      "benchmark": "Harvey legal",
+      "score": 6.67,
+      "cost": 46.21,
+      "minutes": 112,
+      "harness": "Harvey generation protocol",
+      "sourceKey": "legal"
+    },
+    {
+      "model": "Claude Fable 5.1",
+      "family": "Anthropic",
+      "benchmark": "Web apps v1.1",
+      "score": 90.26,
+      "cost": 33.37,
+      "minutes": 57.667,
+      "harness": "OpenHands",
+      "sourceKey": "apps"
+    },
+    {
+      "model": "Muse Wonder Full",
+      "family": "Meta",
+      "benchmark": "Terminal 4.0",
+      "score": 58.08,
+      "cost": 10.53,
+      "minutes": 72,
+      "harness": "mini-swe-agent",
+      "sourceKey": "terminal"
+    },
+    {
+      "model": "Muse Wonder Full",
+      "family": "Meta",
+      "benchmark": "Finance v2",
+      "score": 59.06,
+      "cost": 2.39,
+      "minutes": 14.933,
+      "harness": "Vals Finance Agent v2",
+      "sourceKey": "finance"
+    },
+    {
+      "model": "Muse Wonder Full",
+      "family": "Meta",
+      "benchmark": "Harvey legal",
+      "score": 21.67,
+      "cost": 5.41,
+      "minutes": 53.35,
+      "harness": "Harvey generation protocol",
+      "sourceKey": "legal"
+    },
+    {
+      "model": "Muse Wonder Full",
+      "family": "Meta",
+      "benchmark": "Web apps v1.1",
+      "score": 86,
+      "cost": 2.29,
+      "minutes": 10.8,
+      "harness": "OpenHands",
+      "sourceKey": "apps"
+    },
+    {
+      "model": "Muse Wonder",
+      "family": "Meta",
+      "benchmark": "Terminal 4.0",
+      "score": 49.49,
+      "cost": 14.66,
+      "minutes": 54.683,
+      "harness": "mini-swe-agent",
+      "sourceKey": "terminal"
+    },
+    {
+      "model": "Muse Wonder",
+      "family": "Meta",
+      "benchmark": "Finance v2",
+      "score": 56.64,
+      "cost": 2.67,
+      "minutes": 6.15,
+      "harness": "Vals Finance Agent v2",
+      "sourceKey": "finance"
+    },
+    {
+      "model": "Muse Wonder",
+      "family": "Meta",
+      "benchmark": "Harvey legal",
+      "score": 17.08,
+      "cost": 7.08,
+      "minutes": 22.833,
+      "harness": "Harvey generation protocol",
+      "sourceKey": "legal"
+    },
+    {
+      "model": "Muse Wonder",
+      "family": "Meta",
+      "benchmark": "Web apps v1.1",
+      "score": 83.09,
+      "cost": 1.8,
+      "minutes": 5.833,
+      "harness": "OpenHands",
+      "sourceKey": "apps"
+    },
+    {
+      "model": "Muse Spark 1.3 Max",
+      "family": "Meta",
+      "benchmark": "Terminal 4.0",
+      "score": 24.75,
+      "cost": 6.65,
+      "minutes": 52.933,
+      "harness": "mini-swe-agent",
+      "sourceKey": "terminal"
+    },
+    {
+      "model": "Muse Spark 1.3 Max",
+      "family": "Meta",
+      "benchmark": "Finance v2",
+      "score": 59.96,
+      "cost": 0.76,
+      "minutes": 3.317,
+      "harness": "Vals Finance Agent v2",
+      "sourceKey": "finance"
+    },
+    {
+      "model": "Muse Spark 1.3 Max",
+      "family": "Meta",
+      "benchmark": "Harvey legal",
+      "score": 23.75,
+      "cost": 2.26,
+      "minutes": 14.717,
+      "harness": "Harvey generation protocol",
+      "sourceKey": "legal"
+    },
+    {
+      "model": "Muse Spark 1.3 Max",
+      "family": "Meta",
+      "benchmark": "Web apps v1.1",
+      "score": 85.86,
+      "cost": 2.54,
+      "minutes": 16.3,
+      "harness": "OpenHands",
+      "sourceKey": "apps"
+    },
+    {
+      "model": "Muse Spark 1.3",
+      "family": "Meta",
+      "benchmark": "Terminal 4.0",
+      "score": 10.61,
+      "cost": 7.04,
+      "minutes": 119,
+      "harness": "mini-swe-agent",
+      "sourceKey": "terminal"
+    },
+    {
+      "model": "Muse Spark 1.3",
+      "family": "Meta",
+      "benchmark": "Finance v2",
+      "score": 58.9,
+      "cost": 0.74,
+      "minutes": 5.7,
+      "harness": "Vals Finance Agent v2",
+      "sourceKey": "finance"
+    },
+    {
+      "model": "Muse Spark 1.3",
+      "family": "Meta",
+      "benchmark": "Harvey legal",
+      "score": 22.92,
+      "cost": 2.76,
+      "minutes": 17.067,
+      "harness": "Harvey generation protocol",
+      "sourceKey": "legal"
+    },
+    {
+      "model": "Muse Spark 1.3",
+      "family": "Meta",
+      "benchmark": "Web apps v1.1",
+      "score": 82.86,
+      "cost": 2.1,
+      "minutes": 12.9,
+      "harness": "OpenHands",
+      "sourceKey": "apps"
+    }
+  ],
+  "sources": {
+    "terminal": {
+      "label": "Vals AI · Terminal-Bench 4.0",
+      "href": "https://www.vals-ai.com/benchmarks/terminal-bench-4",
+      "updated": "October 13, 2026",
+      "definition": "Terminal-Bench 4.0 score is the mean pass@1 percentage across three runs of 66 tasks using mini-swe-agent.",
+      "caveat": "Published Terminal-Bench scores include provider fallback runs. Counting those as failures yields Opus 5.5 58.08%, Sonnet 5.5 62.63%, and Fable 5.1 50.00%. Effort settings are not fully exposed in the extracted leaderboard."
+    },
+    "finance": {
+      "label": "Vals AI · Finance Agent v2",
+      "href": "https://www.vals-ai.com/benchmarks/fabv2",
+      "updated": "October 12, 2026",
+      "definition": "Finance Agent v2 score is dealbreaker-gated, weighted partial credit on the held-out test set; it is not the percentage of entirely correct tasks.",
+      "caveat": "The finance table was used directly. Some narrative takeaways on the page lag the current table. Three-run results use LLM grading."
+    },
+    "legal": {
+      "label": "Vals AI · Harvey Legal Agent Benchmark",
+      "href": "https://www.vals.ai/benchmarks/hlab",
+      "updated": "October 12, 2026",
+      "definition": "Harvey score averages two judge task pass rates; a task passes only when every criterion passes. The run uses the held-out set with internet disabled.",
+      "caveat": "Vals Harvey results differ from Harvey LAB-AA v1.1 cited by Meta, which adds hallucination checks and uses a different judging setup."
+    },
+    "apps": {
+      "label": "Vals AI · Vibe Code Bench v1.1",
+      "href": "https://www.vals-ai.com/benchmarks/vibe-code",
+      "updated": "October 12, 2026",
+      "definition": "Vibe Code Bench v1.1 score averages workflow-test success. A test passes when at least 90% of its substeps succeed; it is not an entirely-working-app percentage.",
+      "caveat": "App-building rows use OpenHands except Composer 2.5, which uses Cursor CLI. Its score measures a different model-plus-harness system. Small score differences have no extracted uncertainty bounds."
+    }
+  },
+  "claimsRows": [
+    {
+      "model": "Claude Sonnet 5.5",
+      "source": "Launch page",
+      "score": 70.6
+    },
+    {
+      "model": "Claude Sonnet 5.5",
+      "source": "Vals published",
+      "score": 64.14
+    },
+    {
+      "model": "Claude Sonnet 5.5",
+      "source": "Vals fallback = failure",
+      "score": 62.63
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "source": "Launch page",
+      "score": 66.4
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "source": "Vals published",
+      "score": 65.15
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "source": "Vals fallback = failure",
+      "score": 58.08
+    },
+    {
+      "model": "Grok 4.7",
+      "source": "Launch page",
+      "score": 37.6
+    },
+    {
+      "model": "Grok 4.7",
+      "source": "Vals published",
+      "score": 28.79
+    },
+    {
+      "model": "Grok 4.7",
+      "source": "Vals fallback = failure",
+      "score": null
+    }
+  ]
+}

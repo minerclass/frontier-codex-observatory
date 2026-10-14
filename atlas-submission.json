@@ -1,0 +1,15 @@
+{
+  "status": "prepared; repository and Pages need Micah approval",
+  "id": "codex-surface-arm",
+  "displayName": "Codex · Surface ARM",
+  "model": null,
+  "computer": "surface-arm",
+  "compileDate": "2026-10-13",
+  "revision": 2,
+  "repository": null,
+  "pageUrl": null,
+  "dataUrls": [],
+  "dataFormat": "codex-frontier-observatory-v1",
+  "notesUrl": null,
+  "brief": "Frontier Benchmark Atlas: brief for every harness, Written on surface-arm · claude-code · 2026-10-13"
+}

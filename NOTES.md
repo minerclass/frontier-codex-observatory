@@ -1,0 +1,61 @@
+Written on: surface-arm · codex · 2026-10-13
+
+# Codex frontier model observatory
+
+Harness: Codex. Computer: surface-arm, verified as MSURFACE32ARM64. Effective compiler model: not captured by this session. No named-model attribution is inferred from the scored model list or the app's available models.
+
+## Request and interpretation
+
+Micah asked for immersive schematics and interactive charts comparing Gemini 4 Argon, Cursor with Grok 4.7, relevant GPT-6.1/GPT-6 models including Astra, Claude 5.5 and Fable 5.1, and new Muse models. Micah identified Muse as Meta.
+
+Cursor is a product/harness. Composer is Cursor's model, and Grok is available through Cursor and other products. GPT-6.1 Sol, GPT-6 Astra, GPT-6 Sol and GPT-6 Luna are separate models; effort and serving-speed variants are separate settings. The scored set includes Opus, Sonnet and Haiku 5.5, Fable 5.1, Muse Wonder/Full and the Spark labels printed by Vals. Muse Spark 1.3 Max is retained as a benchmark label; a distinct product release was not independently established.
+
+## Revision history and independence
+
+Revision 01 preserves the original source collection and visual comparison created in this chat. It predates the Frontier Benchmark Atlas brief. Its direct Vals source pass supplied four benchmark tables, costs and durations, with selected launch comparisons and fallback sensitivity results.
+
+During preparation for a shared matrix extension, Codex read Micah's Cursor handoff and the committed Grok Bot contribution before a first Git commit. That extension was staged separately and was never installed in the shared checkout. This sequence does not satisfy a blinded first-commit comparison. No claim of blind independence is made.
+
+Revision 02 responds to the later atlas brief. It packages a standalone Codex contribution and adds selected company-table figures from fresh direct reads of primary sources. It does not import Cursor's or Grok Bot's compiled scores. The untouched chart files remain the initial snapshot; the record explorer and data.json contain revision 02. Corrections and later source changes should appear in numbered revisions with a reason.
+
+No benchmark model was executed. A separate Codex source-verification pass was still a Codex review, not a Claude Code or Cursor run.
+
+## Sources read directly
+
+- Vals Terminal-Bench 4.0: https://www.vals-ai.com/benchmarks/terminal-bench-4
+- Vals Finance Agent v2: https://www.vals-ai.com/benchmarks/fabv2
+- Vals Harvey legal: https://www.vals.ai/benchmarks/hlab
+- Vals Vibe Code Bench v1.1: https://www.vals-ai.com/benchmarks/vibe-code
+- Google Argon card: https://deepmind.google/models/model-cards/gemini-4-argon/
+- Google limited-rollout announcement: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/
+- Google broad availability: https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/
+- OpenAI Sol and Luna: https://openai.com/index/introducing-gpt-6-sol-and-luna/
+- OpenAI GPT-6.1 Sol: https://openai.com/index/introducing-gpt-6-1-sol/
+- OpenAI Astra: https://openai.com/index/gpt-6-astra/
+- Anthropic Opus: https://www.anthropic.com/claude-opus-5-5
+- Anthropic Sonnet: https://www.anthropic.com/claude-sonnet-5-5
+- Anthropic Haiku: https://www.anthropic.com/claude-haiku-5-5
+- Anthropic Fable: https://www.anthropic.com/claude-fable-and-mythos-5-1
+- Grok launch: https://x.ai/news/grok-4-7
+- Meta Muse launch: https://dev.meta.ai/resources/blog/build-with-muse-wonder
+- Cursor Composer release: https://cursor.com/marketing-static/blog/composer-2-5
+
+All observation receipts say whether the source page was read directly. Directly reading a lab's rival table does not mean reading the rival model's original evaluation. Rival-table evidence remains attributed to the publishing lab. The selected company rows do not exhaust each launch table. Some release dates for older Grok and Muse Spark labels remain unverified rather than guessed.
+
+## Important setup differences
+
+- Vals Terminal 4.0 is the mean of three pass@1 runs with mini-swe-agent on 66 tasks. Published results include provider fallback. The alternative sensitivity values count fallback attempts as failures.
+- Finance v2 gives dealbreaker-gated weighted partial credit. It is not an all-correct-task rate.
+- Vals Harvey requires every criterion to pass, using the held-out tasks with internet disabled and averaging two judges. Meta's Harvey LAB-AA is a separate setup.
+- Vibe Code v1.1 averages workflow-test success; a test passes when at least 90% of its substeps pass. Composer uses Cursor CLI; other collected rows use OpenHands.
+- Terminal-Bench 4.0-AA and AutomationBench-AA retain distinct identifiers. No company/independent average or overall intelligence rank is calculated.
+- Recorded task costs are not repriced. Vals used Argon rates of $4/$20 per million tokens; Google's introductory announcement gives $2/$10.
+- GPT-6.1 Sol's DeepSWE value is derived, not a printed absolute. The calculation is GPT-6 Sol max 68.8 plus a reported 6.4 percentage-point improvement, giving 75.2. Both primary URLs and the explanation are retained.
+
+## Maintenance and publication
+
+Monday is check-in day. Micah requested weekly checks and notifications only for meaningful changes. New model releases, material benchmark corrections, and actual compilation changes qualify. Unchanged checks stay quiet. Local checks require this computer and Codex to be available.
+
+This contribution is prepared locally. A GitHub repository, Pages publication, push, and atlas registration are pending Micah's approval. The shared matrix checkout and the Claude-owned atlas were not modified. No inbox post or message to another harness was sent.
+
+The standalone chart exports embed the main runtime and retain pinned unpkg helpers for Floating UI core 1.7.3, Floating UI DOM 1.7.4 and Lucide 1.17.0. Core schematic and chart views are checked offline; auxiliary icons/floating controls and external source links may need a connection.
