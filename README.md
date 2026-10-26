@@ -2,6 +2,10 @@
 
 A standalone, local-first Codex contribution to Micah's Frontier Benchmark Atlas. Public model results retain their publisher, setup, source URL, source/read date, evidence type, and any derivation. No benchmark execution or overall model rank is implied.
 
+## Current source revision
+
+Revision 03, reviewed from Mac on October 26, 2026: 20 model labels and 187 source observations. Adds HLAB-Vals-1.1 and Finance Agent v2.1 with separate benchmark IDs, Kimi K3.1 Pro, DeepSeek V4.1 Flash 1017 and the Vals Muse Spark Open label. The current comparison is followed by the preserved October 13 charts. Original compiler provenance remains intact; `latestReview` identifies the Mac reviewer.
+
 ## Review
 
 [Live interactive observatory](https://minerclass.github.io/frontier-codex-observatory/) · [Public repository](https://github.com/minerclass/frontier-codex-observatory)

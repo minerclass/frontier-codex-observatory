@@ -74,3 +74,32 @@ Data: https://raw.githubusercontent.com/minerclass/frontier-codex-observatory/ma
 Atlas metadata: https://raw.githubusercontent.com/minerclass/frontier-codex-observatory/main/atlas-submission.json
 
 The atlas owner still handles registration. Future pushes and atlas edits require Micah’s approval.
+
+
+## October 26, 2026 · Revision 03 source review from Mac
+
+Written on: mac · codex · 2026-10-26
+
+Micah explicitly authorized updating the existing Surface ARM compilation from this Mac. Computer name was verified as MMMacBookPro32. This revision was reviewed by mac/codex; the effective compiler model was not captured. The stable contribution ID and original compiler metadata remain surface-arm/codex to preserve attribution and atlas compatibility. `latestReview` records the current reviewer separately.
+
+The change is driven by Vals's October 24 tables: HLAB-Vals-1.1 and Finance Agent v2.1 replace earlier versions, with new evaluation and grading details. They use separate benchmark IDs. All 155 earlier records and the original seven chart files are preserved. The old Harvey source URL now opens the new board, so use revision-02.json to inspect the October 13 observations. Neither new version supports a before/after model-improvement claim against its predecessor.
+
+HLAB v1.1 repairs the 120-task holdout and updates the harness and judging support. Its final score requires every criterion to pass and averages the two judge task pass rates. Finance v2.1 revises questions/rubrics, changes the judge jury to GPT-6.1 Sol, Gemini 3.8 Flash and Claude Sonnet 5.5, and changes hedging rules. Its primary score remains dealbreaker-gated weighted partial credit. Vals explicitly says both new benchmarks are not comparable with the older versions.
+
+Added 32 direct Vals observations: 13 legal, 13 finance, and six terminal/app observations for the three added model labels. Kimi K3.1 Pro and DeepSeek V4.1 Flash 1017 have verified primary launch pages. Kimi's exact release date is left null because the read page did not establish it; planned weight release by November 4 is not presented as completed. Muse Spark Open is retained as a Vals model label, with an unverified primary release date; it is not merged with Spark 1.3 or Spark 1.3 Max. Kimi's launch Terminal-Bench score uses Claude Code and is not substituted for its Vals Mini-SWE-agent score. No launch score was imported in this revision.
+
+Terminal-Bench 4.0 and Vibe Code v1.1 selected existing scores match their earlier observations; those rows retain the original read dates, and `sourceChecks` records this pass. Older company-table claims were not comprehensively reverified. Missing model/version combinations have no invented scores. No benchmark was executed.
+
+Primary pages read directly for this revision:
+
+- https://www.vals.ai/benchmarks/hlab
+- https://www.vals-ai.com/benchmarks/fabv2-1
+- https://www.vals-ai.com/benchmarks/fabv2
+- https://www.vals.ai/benchmarks/terminal-bench-4
+- https://www.vals-ai.com/benchmarks/vibe-code
+- https://www.kimi.com/en/blog/kimi-k3-1-pro
+- https://api-docs.deepseek.com/news/news261017/
+
+The current comparison chart reads the revision 03 records and defaults to HLAB v1.1. The October 13 visual snapshots remain clearly dated. The atlas hub and other harness compilations were not edited.
+
+Validation for revision 03: data validation and all eight existing unit tests passed; JavaScript syntax and Git whitespace checks passed; build completed. Confirmed all 155 revision 02 records, all original model entries, original compiler metadata, seven chart hashes and revision 01/02 snapshots remain intact. Browser checks covered benchmark switching, Kimi filtering, missing-result behavior, historical warnings and 390/1280 pixel layouts without document overflow. The archived renderer emits the same MutationObserver console error on both the pre-update public revision 02 page and this build; its source files are preserved. The new comparison and evidence filters functioned during these checks.

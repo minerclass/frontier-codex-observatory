@@ -6,3 +6,12 @@ header{border-bottom:1px solid var(--line);background:var(--surface);padding:1re
 @media(prefers-reduced-motion:no-preference){button,a{transition:background-color .15s,border-color .15s}.report-card:hover{border-color:var(--accent)}}
 @media print{header nav,.controls,.download,.chart-frame,.source-frame{display:none}body{background:#fff;color:#111}main{max-width:none}.record-table{overflow:visible}a{color:#111}.cards{grid-template-columns:1fr 1fr}.section{break-inside:avoid}}
 .codex-hero{padding:2rem 0 2.5rem;background:radial-gradient(ellipse at 76% 42%,var(--soft),transparent 65%)}.hero-map{display:grid;gap:.6rem;grid-template-columns:1fr 1fr}.hero-map>span{border-left:2px solid var(--accent);padding:.7rem 1rem;font-weight:600}.hero-map span span{display:block;font-size:.83rem;font-weight:400;color:var(--muted)}.view-buttons{display:flex;gap:.5rem;flex-wrap:wrap;margin:1rem 0}.origin{display:block}html{scroll-padding-top:1rem}.chart-frame{background:var(--surface)}@media(max-width:560px){.hero-map{grid-template-columns:1fr}.codex-hero{padding:0 0 1rem}.view-buttons button{flex:1 0 45%;padding:.65rem .5rem}.stats{font-size:.88rem}}@media print{#visuals,.view-buttons{display:none}a[href]{text-decoration:underline}}
+
+/* Current source comparison; the saved charts remain untouched. */
+#current-benchmark{display:block;max-width:100%;margin:.6rem 0 1rem;padding:.7rem;font:inherit}
+.score-bars{list-style:none;padding:0;margin:1.5rem 0;display:grid;gap:.85rem}
+.score-bars li{display:grid;grid-template-columns:minmax(10rem,15rem) minmax(2rem,1fr) 5rem;align-items:center;gap:1rem}
+.score-track{height:.8rem;background:color-mix(in srgb,currentColor 10%,transparent);border-radius:1rem;overflow:hidden}
+.score-track span{display:block;height:100%;background:#497c9b;border-radius:1rem}
+.score-bars strong{text-align:right;font-variant-numeric:tabular-nums}
+@media(max-width:600px){.score-bars li{grid-template-columns:1fr 4rem;gap:.4rem}.score-track{grid-column:1;grid-row:2}.score-bars strong{grid-column:2;grid-row:1 / span 2}.score-name{font-size:.95rem}}
