@@ -1,11 +1,11 @@
 {
-  "status": "Published contribution; revision 3 source review from Mac",
+  "status": "Published contribution; revision 4 prepared locally, pending push approval",
   "id": "codex-surface-arm",
   "displayName": "Codex · Surface ARM",
   "model": null,
   "computer": "surface-arm",
-  "compileDate": "2026-10-26",
-  "revision": 3,
+  "compileDate": "2026-11-09",
+  "revision": 4,
   "repository": "minerclass/frontier-codex-observatory",
   "pageUrl": "https://minerclass.github.io/frontier-codex-observatory/",
   "dataUrls": [
@@ -19,9 +19,9 @@
     "harness": "codex",
     "computer": "mac",
     "model": null,
-    "readOn": "2026-10-26",
-    "previousRevision": 2,
-    "authorization": "Micah authorized updating the existing Surface ARM compilation from this Mac on October 26, 2026.",
-    "scope": "New legal/finance benchmark versions, selected current Vals tables, Kimi and DeepSeek releases. Historical company claims retain their original read dates."
+    "readOn": "2026-11-09",
+    "previousRevision": 3,
+    "authorization": "Micah requested the GitHub AI-model update on November 9, 2026. The October 26 authorization to maintain this existing compilation from Mac remains in effect. Push and Pages publication await approval.",
+    "scope": "Four new model releases/announcements, 16 direct Vals observations and six publisher task-cost changes. Selected tracked scores on the four current Vals boards were checked; older company-table claims retain their original read dates."
   }
 }

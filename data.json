@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "format": "codex-frontier-observatory-v1",
-  "revision": 3,
+  "revision": 4,
   "compiler": {
     "id": "codex-surface-arm",
     "harness": "codex",
@@ -153,7 +153,7 @@
       "maker": "Moonshot AI",
       "releaseDate": null,
       "releaseSource": null,
-      "note": "Primary launch verified at https://www.kimi.com/en/blog/kimi-k3-1-pro; exact release date was not stated in the read page. Standard and Highspeed serving variants; launch says full weights are planned by November 4, 2026."
+      "note": "Primary launch re-read November 9 at https://www.kimi.com/en/blog/kimi-k3-1-pro; exact release date remains unstated. Standard and Highspeed serving variants. The page still says weights will be released by November 4; completed weight availability was not independently verified, so that plan is not treated as a completed release."
     },
     {
       "slug": "deepseek-v4-1-flash-1017",
@@ -170,6 +170,38 @@
       "releaseDate": null,
       "releaseSource": null,
       "note": "Model label printed by Vals; a primary release date was not verified in this pass. Do not equate this label with Muse Spark 1.3 or 1.3 Max."
+    },
+    {
+      "slug": "claude-fable-5-2",
+      "name": "Claude Fable 5.2",
+      "maker": "Anthropic",
+      "releaseDate": "2026-11-09",
+      "releaseSource": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "note": "Generally available Fable model; Mythos 5.2 is a separate verification-program access surface. Standard and fast serving are settings, not separate model releases."
+    },
+    {
+      "slug": "gemini-4-carbon",
+      "name": "Gemini 4 Carbon",
+      "maker": "Google",
+      "releaseDate": "2026-10-28",
+      "releaseSource": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "note": "Announcement date, not general availability. Limited prerelease testing with government and selected cyber defenders through the Fairwind Program; broader access was still planned in the source read."
+    },
+    {
+      "slug": "gpt-6-1-terra",
+      "name": "GPT-6.1 Terra",
+      "maker": "OpenAI",
+      "releaseDate": "2026-10-26",
+      "releaseSource": "https://developers.openai.com/api/docs/changelog",
+      "note": "API release date verified in the October 26 changelog. The model page describes visual reasoning, computer use and writing; effort levels remain settings. https://developers.openai.com/api/docs/models/gpt-6.1-terra"
+    },
+    {
+      "slug": "muse-ember",
+      "name": "Muse Ember",
+      "maker": "Meta",
+      "releaseDate": "2026-11-09",
+      "releaseSource": "https://research.meta.ai/blog/muse-ember",
+      "note": "Available on Muse Code and the Meta Model API as muse-ember-1.0. Distinct from the unrelated Ember-1 label on the Vals boards; no scores from Ember-1 are imported."
     }
   ],
   "records": [
@@ -1164,13 +1196,17 @@
         "fallback": "included where provider substitutes"
       },
       "sourceUrl": "https://www.vals-ai.com/benchmarks/terminal-bench-4",
-      "sourceDate": "2026-10-13",
-      "readOn": "2026-10-13",
+      "sourceDate": "2026-11-09",
+      "readOn": "2026-11-09",
       "sourceRead": true,
       "origin": "published",
-      "note": "Mean pass@1 across three runs, 66 tasks, mini-swe-agent, 8-hour task limit; provider fallback is included. Published Terminal-Bench scores include provider fallback runs. Counting those as failures yields Opus 5.5 58.08%, Sonnet 5.5 62.63%, and Fable 5.1 50.00%. Effort settings are not fully exposed in the extracted leaderboard.",
-      "costUsd": 13.2,
-      "durationMinutes": 64
+      "note": "Mean pass@1 across three runs, 66 tasks, mini-swe-agent, 8-hour task limit; provider fallback is included. Published Terminal-Bench scores include provider fallback runs. Counting those as failures yields Opus 5.5 58.08%, Sonnet 5.5 62.63%, and Fable 5.1 50.00%. Effort settings are not fully exposed in the extracted leaderboard. November 9 source refresh: Vals now prints $12.04 per task (previous receipt $13.20); score and duration are unchanged. This is the publisher's current cost, not a repricing calculation. Earlier receipt: snapshots/revision-03.json, observation 75f05e9c5a3088bbe2.",
+      "costUsd": 12.04,
+      "durationMinutes": 64,
+      "previousReceipt": {
+        "snapshot": "snapshots/revision-03.json",
+        "id": "75f05e9c5a3088bbe2"
+      }
     },
     {
       "id": "2487c8b22747749008",
@@ -1245,13 +1281,17 @@
         "fallback": null
       },
       "sourceUrl": "https://www.vals-ai.com/benchmarks/vibe-code",
-      "sourceDate": "2026-10-12",
-      "readOn": "2026-10-13",
+      "sourceDate": "2026-11-09",
+      "readOn": "2026-11-09",
       "sourceRead": true,
       "origin": "published",
-      "note": "Average workflow-test success; a test passes at 90% of substeps. Composer uses Cursor CLI, a separate setup. App-building rows use OpenHands except Composer 2.5, which uses Cursor CLI. Its score measures a different model-plus-harness system. Small score differences have no extracted uncertainty bounds.",
-      "costUsd": 57.92,
-      "durationMinutes": 96
+      "note": "Average workflow-test success; a test passes at 90% of substeps. Composer uses Cursor CLI, a separate setup. App-building rows use OpenHands except Composer 2.5, which uses Cursor CLI. Its score measures a different model-plus-harness system. Small score differences have no extracted uncertainty bounds. November 9 source refresh: Vals now prints $35.77 per task (previous receipt $57.92); score and duration are unchanged. This is the publisher's current cost, not a repricing calculation. Earlier receipt: snapshots/revision-03.json, observation 717eaec18fb7c13574.",
+      "costUsd": 35.77,
+      "durationMinutes": 96,
+      "previousReceipt": {
+        "snapshot": "snapshots/revision-03.json",
+        "id": "717eaec18fb7c13574"
+      }
     },
     {
       "id": "d84d789231ee637d47",
@@ -1272,13 +1312,17 @@
         "fallback": "included where provider substitutes"
       },
       "sourceUrl": "https://www.vals-ai.com/benchmarks/terminal-bench-4",
-      "sourceDate": "2026-10-13",
-      "readOn": "2026-10-13",
+      "sourceDate": "2026-11-09",
+      "readOn": "2026-11-09",
       "sourceRead": true,
       "origin": "published",
-      "note": "Mean pass@1 across three runs, 66 tasks, mini-swe-agent, 8-hour task limit; provider fallback is included. Published Terminal-Bench scores include provider fallback runs. Counting those as failures yields Opus 5.5 58.08%, Sonnet 5.5 62.63%, and Fable 5.1 50.00%. Effort settings are not fully exposed in the extracted leaderboard.",
-      "costUsd": 16.51,
-      "durationMinutes": 82
+      "note": "Mean pass@1 across three runs, 66 tasks, mini-swe-agent, 8-hour task limit; provider fallback is included. Published Terminal-Bench scores include provider fallback runs. Counting those as failures yields Opus 5.5 58.08%, Sonnet 5.5 62.63%, and Fable 5.1 50.00%. Effort settings are not fully exposed in the extracted leaderboard. November 9 source refresh: Vals now prints $10.75 per task (previous receipt $16.51); score and duration are unchanged. This is the publisher's current cost, not a repricing calculation. Earlier receipt: snapshots/revision-03.json, observation d84d789231ee637d47.",
+      "costUsd": 10.75,
+      "durationMinutes": 82,
+      "previousReceipt": {
+        "snapshot": "snapshots/revision-03.json",
+        "id": "d84d789231ee637d47"
+      }
     },
     {
       "id": "c2e6560e4ab4e9c35e",
@@ -1353,13 +1397,17 @@
         "fallback": null
       },
       "sourceUrl": "https://www.vals-ai.com/benchmarks/vibe-code",
-      "sourceDate": "2026-10-12",
-      "readOn": "2026-10-13",
+      "sourceDate": "2026-11-09",
+      "readOn": "2026-11-09",
       "sourceRead": true,
       "origin": "published",
-      "note": "Average workflow-test success; a test passes at 90% of substeps. Composer uses Cursor CLI, a separate setup. App-building rows use OpenHands except Composer 2.5, which uses Cursor CLI. Its score measures a different model-plus-harness system. Small score differences have no extracted uncertainty bounds.",
-      "costUsd": 31.25,
-      "durationMinutes": 61
+      "note": "Average workflow-test success; a test passes at 90% of substeps. Composer uses Cursor CLI, a separate setup. App-building rows use OpenHands except Composer 2.5, which uses Cursor CLI. Its score measures a different model-plus-harness system. Small score differences have no extracted uncertainty bounds. November 9 source refresh: Vals now prints $19.73 per task (previous receipt $31.25); score and duration are unchanged. This is the publisher's current cost, not a repricing calculation. Earlier receipt: snapshots/revision-03.json, observation 66d9f519755b9861e7.",
+      "costUsd": 19.73,
+      "durationMinutes": 61,
+      "previousReceipt": {
+        "snapshot": "snapshots/revision-03.json",
+        "id": "66d9f519755b9861e7"
+      }
     },
     {
       "id": "182d8c45f850e67d63",
@@ -4483,13 +4531,17 @@
         "fallback": null
       },
       "sourceUrl": "https://www.vals.ai/benchmarks/hlab",
-      "sourceDate": "2026-10-24",
-      "readOn": "2026-10-26",
+      "sourceDate": "2026-11-09",
+      "readOn": "2026-11-09",
       "sourceRead": true,
       "origin": "published",
-      "note": "Task resolution on the repaired 120-task holdout with updated Harvey/Vals harness. All criteria must pass; final score averages two judges. Not comparable with archived v1 or Harvey LAB-AA.",
-      "costUsd": 16.61,
-      "durationMinutes": 73.0
+      "note": "Task resolution on the repaired 120-task holdout with updated Harvey/Vals harness. All criteria must pass; final score averages two judges. Not comparable with archived v1 or Harvey LAB-AA. November 9 source refresh: Vals now prints $17.71 per task (previous receipt $16.61); score and duration are unchanged. This is the publisher's current cost, not a repricing calculation. Earlier receipt: snapshots/revision-03.json, observation 004f263c8405626e33.",
+      "costUsd": 17.71,
+      "durationMinutes": 73.0,
+      "previousReceipt": {
+        "snapshot": "snapshots/revision-03.json",
+        "id": "004f263c8405626e33"
+      }
     },
     {
       "id": "d1f536e3917f0cd9ea",
@@ -4510,13 +4562,17 @@
         "fallback": null
       },
       "sourceUrl": "https://www.vals.ai/benchmarks/hlab",
-      "sourceDate": "2026-10-24",
-      "readOn": "2026-10-26",
+      "sourceDate": "2026-11-09",
+      "readOn": "2026-11-09",
       "sourceRead": true,
       "origin": "published",
-      "note": "Task resolution on the repaired 120-task holdout with updated Harvey/Vals harness. All criteria must pass; final score averages two judges. Not comparable with archived v1 or Harvey LAB-AA.",
-      "costUsd": 21.38,
-      "durationMinutes": 58.45
+      "note": "Task resolution on the repaired 120-task holdout with updated Harvey/Vals harness. All criteria must pass; final score averages two judges. Not comparable with archived v1 or Harvey LAB-AA. November 9 source refresh: Vals now prints $21.81 per task (previous receipt $21.38); score and duration are unchanged. This is the publisher's current cost, not a repricing calculation. Earlier receipt: snapshots/revision-03.json, observation d1f536e3917f0cd9ea.",
+      "costUsd": 21.81,
+      "durationMinutes": 58.45,
+      "previousReceipt": {
+        "snapshot": "snapshots/revision-03.json",
+        "id": "d1f536e3917f0cd9ea"
+      }
     },
     {
       "id": "e566acb79984cea173",
@@ -5138,6 +5194,438 @@
       "note": "Average workflow-test success; each test needs at least 90% of substeps to pass. Separate from Composer Cursor CLI results.",
       "costUsd": 1.66,
       "durationMinutes": 31.15
+    },
+    {
+      "id": "323eade10b19b8a9f0",
+      "model": "claude-fable-5-2",
+      "benchmark": "Terminal-Bench 4.0",
+      "benchmarkVersion": "4.0",
+      "benchmarkId": "terminal-bench-4.0-vals",
+      "value": 65.15,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "mini-swe-agent",
+        "tools": "bash",
+        "passK": "mean of three pass@1 runs",
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals-ai.com/benchmarks/terminal-bench-4",
+      "sourceDate": "2026-11-09",
+      "readOn": "2026-11-09",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Mean of three pass@1 runs on 66 tasks in mini-swe-agent, with an 8-hour task limit and all-or-nothing verification. These are Vals results, separate from company-published runs in other harnesses. No fallback-failure sensitivity score or effort level was collected for this row.",
+      "costUsd": 14.56,
+      "durationMinutes": 55.117
+    },
+    {
+      "id": "da483c6e61d73104ef",
+      "model": "gemini-4-carbon",
+      "benchmark": "Terminal-Bench 4.0",
+      "benchmarkVersion": "4.0",
+      "benchmarkId": "terminal-bench-4.0-vals",
+      "value": 63.13,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "mini-swe-agent",
+        "tools": "bash",
+        "passK": "mean of three pass@1 runs",
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals-ai.com/benchmarks/terminal-bench-4",
+      "sourceDate": "2026-11-09",
+      "readOn": "2026-11-09",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Mean of three pass@1 runs on 66 tasks in mini-swe-agent, with an 8-hour task limit and all-or-nothing verification. These are Vals results, separate from company-published runs in other harnesses. No fallback-failure sensitivity score or effort level was collected for this row.",
+      "costUsd": 7.45,
+      "durationMinutes": 45.117
+    },
+    {
+      "id": "40ea3a1ac46974dfc8",
+      "model": "gpt-6-1-terra",
+      "benchmark": "Terminal-Bench 4.0",
+      "benchmarkVersion": "4.0",
+      "benchmarkId": "terminal-bench-4.0-vals",
+      "value": 49.49,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "mini-swe-agent",
+        "tools": "bash",
+        "passK": "mean of three pass@1 runs",
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals-ai.com/benchmarks/terminal-bench-4",
+      "sourceDate": "2026-11-09",
+      "readOn": "2026-11-09",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Mean of three pass@1 runs on 66 tasks in mini-swe-agent, with an 8-hour task limit and all-or-nothing verification. These are Vals results, separate from company-published runs in other harnesses. No fallback-failure sensitivity score or effort level was collected for this row.",
+      "costUsd": 2.16,
+      "durationMinutes": 33.883
+    },
+    {
+      "id": "3085a0d0148df050d4",
+      "model": "muse-ember",
+      "benchmark": "Terminal-Bench 4.0",
+      "benchmarkVersion": "4.0",
+      "benchmarkId": "terminal-bench-4.0-vals",
+      "value": 39.39,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "mini-swe-agent",
+        "tools": "bash",
+        "passK": "mean of three pass@1 runs",
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals-ai.com/benchmarks/terminal-bench-4",
+      "sourceDate": "2026-11-09",
+      "readOn": "2026-11-09",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Mean of three pass@1 runs on 66 tasks in mini-swe-agent, with an 8-hour task limit and all-or-nothing verification. These are Vals results, separate from company-published runs in other harnesses. No fallback-failure sensitivity score or effort level was collected for this row.",
+      "costUsd": 0.22,
+      "durationMinutes": 26.35
+    },
+    {
+      "id": "651ac8446fcac05434",
+      "model": "claude-fable-5-2",
+      "benchmark": "Vibe Code Bench v1.1",
+      "benchmarkVersion": "1.1",
+      "benchmarkId": "vibe-code-1.1-openhands-vals",
+      "value": 93.77,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "OpenHands",
+        "tools": null,
+        "passK": null,
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals-ai.com/benchmarks/vibe-code",
+      "sourceDate": "2026-11-09",
+      "readOn": "2026-11-09",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Mean application workflow-test success in OpenHands; a test needs at least 90% of its substeps to succeed. Separate from Composer Cursor CLI results.",
+      "costUsd": 22.13,
+      "durationMinutes": 40.617
+    },
+    {
+      "id": "23727614e4baf4b2c4",
+      "model": "gemini-4-carbon",
+      "benchmark": "Vibe Code Bench v1.1",
+      "benchmarkVersion": "1.1",
+      "benchmarkId": "vibe-code-1.1-openhands-vals",
+      "value": 89.06,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "OpenHands",
+        "tools": null,
+        "passK": null,
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals-ai.com/benchmarks/vibe-code",
+      "sourceDate": "2026-11-09",
+      "readOn": "2026-11-09",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Mean application workflow-test success in OpenHands; a test needs at least 90% of its substeps to succeed. Separate from Composer Cursor CLI results.",
+      "costUsd": 8.25,
+      "durationMinutes": 36.2
+    },
+    {
+      "id": "ab9b48dc40a66d57be",
+      "model": "gpt-6-1-terra",
+      "benchmark": "Vibe Code Bench v1.1",
+      "benchmarkVersion": "1.1",
+      "benchmarkId": "vibe-code-1.1-openhands-vals",
+      "value": 84.0,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "OpenHands",
+        "tools": null,
+        "passK": null,
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals-ai.com/benchmarks/vibe-code",
+      "sourceDate": "2026-11-09",
+      "readOn": "2026-11-09",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Mean application workflow-test success in OpenHands; a test needs at least 90% of its substeps to succeed. Separate from Composer Cursor CLI results.",
+      "costUsd": 6.0,
+      "durationMinutes": 37.5
+    },
+    {
+      "id": "9812c52766470be25f",
+      "model": "muse-ember",
+      "benchmark": "Vibe Code Bench v1.1",
+      "benchmarkVersion": "1.1",
+      "benchmarkId": "vibe-code-1.1-openhands-vals",
+      "value": 83.7,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "OpenHands",
+        "tools": null,
+        "passK": null,
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals-ai.com/benchmarks/vibe-code",
+      "sourceDate": "2026-11-09",
+      "readOn": "2026-11-09",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Mean application workflow-test success in OpenHands; a test needs at least 90% of its substeps to succeed. Separate from Composer Cursor CLI results.",
+      "costUsd": 0.05,
+      "durationMinutes": 2.8
+    },
+    {
+      "id": "46d10618702c99876f",
+      "model": "claude-fable-5-2",
+      "benchmark": "HLAB-Vals-1.1",
+      "benchmarkVersion": "1.1",
+      "benchmarkId": "hlab-vals-1.1",
+      "value": 5.0,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "Harvey/Vals v1.1",
+        "tools": "Read File, Edit File, Write File, Glob, Bash, Grep; docx/pptx/xlsx skills",
+        "passK": null,
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals.ai/benchmarks/hlab",
+      "sourceDate": "2026-11-09",
+      "readOn": "2026-11-09",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Task resolution on the 120-task Harvey/Vals v1.1 holdout; every criterion must pass, with the two judge task-pass rates averaged. This is not criteria pass rate and is not comparable with archived v1 or Harvey LAB-AA.",
+      "costUsd": 19.37,
+      "durationMinutes": 32.567
+    },
+    {
+      "id": "226ae16cdc5515a640",
+      "model": "gemini-4-carbon",
+      "benchmark": "HLAB-Vals-1.1",
+      "benchmarkVersion": "1.1",
+      "benchmarkId": "hlab-vals-1.1",
+      "value": 17.5,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "Harvey/Vals v1.1",
+        "tools": "Read File, Edit File, Write File, Glob, Bash, Grep; docx/pptx/xlsx skills",
+        "passK": null,
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals.ai/benchmarks/hlab",
+      "sourceDate": "2026-11-09",
+      "readOn": "2026-11-09",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Task resolution on the 120-task Harvey/Vals v1.1 holdout; every criterion must pass, with the two judge task-pass rates averaged. This is not criteria pass rate and is not comparable with archived v1 or Harvey LAB-AA.",
+      "costUsd": 6.52,
+      "durationMinutes": 28.683
+    },
+    {
+      "id": "239e8933c9cff30ec0",
+      "model": "gpt-6-1-terra",
+      "benchmark": "HLAB-Vals-1.1",
+      "benchmarkVersion": "1.1",
+      "benchmarkId": "hlab-vals-1.1",
+      "value": 1.67,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "Harvey/Vals v1.1",
+        "tools": "Read File, Edit File, Write File, Glob, Bash, Grep; docx/pptx/xlsx skills",
+        "passK": null,
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals.ai/benchmarks/hlab",
+      "sourceDate": "2026-11-09",
+      "readOn": "2026-11-09",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Task resolution on the 120-task Harvey/Vals v1.1 holdout; every criterion must pass, with the two judge task-pass rates averaged. This is not criteria pass rate and is not comparable with archived v1 or Harvey LAB-AA.",
+      "costUsd": 1.48,
+      "durationMinutes": 13.7
+    },
+    {
+      "id": "94636dd172f39448ba",
+      "model": "muse-ember",
+      "benchmark": "HLAB-Vals-1.1",
+      "benchmarkVersion": "1.1",
+      "benchmarkId": "hlab-vals-1.1",
+      "value": 25.0,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "Harvey/Vals v1.1",
+        "tools": "Read File, Edit File, Write File, Glob, Bash, Grep; docx/pptx/xlsx skills",
+        "passK": null,
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals.ai/benchmarks/hlab",
+      "sourceDate": "2026-11-09",
+      "readOn": "2026-11-09",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Task resolution on the 120-task Harvey/Vals v1.1 holdout; every criterion must pass, with the two judge task-pass rates averaged. This is not criteria pass rate and is not comparable with archived v1 or Harvey LAB-AA.",
+      "costUsd": 0.12,
+      "durationMinutes": 5.9
+    },
+    {
+      "id": "9dc40535436a25386e",
+      "model": "claude-fable-5-2",
+      "benchmark": "Finance Agent v2.1",
+      "benchmarkVersion": "2.1",
+      "benchmarkId": "finance-agent-v2.1-vals",
+      "value": 69.47,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "Vals Finance Agent v2.1",
+        "tools": "edgar_search, web_search, parse_html_page, retrieve_information, calculator, price_history",
+        "passK": null,
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals-ai.com/benchmarks/fabv2-1",
+      "sourceDate": "2026-11-09",
+      "readOn": "2026-11-09",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Dealbreaker-gated weighted partial credit with v2.1 question/rubric fixes, judge jury and hedging rules. This is not an all-pass-task rate and is not comparable with Finance Agent v2.",
+      "costUsd": 4.83,
+      "durationMinutes": 3.467
+    },
+    {
+      "id": "ac3fc6b5ebbc2bdb29",
+      "model": "gemini-4-carbon",
+      "benchmark": "Finance Agent v2.1",
+      "benchmarkVersion": "2.1",
+      "benchmarkId": "finance-agent-v2.1-vals",
+      "value": 67.16,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "Vals Finance Agent v2.1",
+        "tools": "edgar_search, web_search, parse_html_page, retrieve_information, calculator, price_history",
+        "passK": null,
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals-ai.com/benchmarks/fabv2-1",
+      "sourceDate": "2026-11-09",
+      "readOn": "2026-11-09",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Dealbreaker-gated weighted partial credit with v2.1 question/rubric fixes, judge jury and hedging rules. This is not an all-pass-task rate and is not comparable with Finance Agent v2.",
+      "costUsd": 7.29,
+      "durationMinutes": 29.667
+    },
+    {
+      "id": "b693bb7e9c86fc2d73",
+      "model": "gpt-6-1-terra",
+      "benchmark": "Finance Agent v2.1",
+      "benchmarkVersion": "2.1",
+      "benchmarkId": "finance-agent-v2.1-vals",
+      "value": 55.96,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "Vals Finance Agent v2.1",
+        "tools": "edgar_search, web_search, parse_html_page, retrieve_information, calculator, price_history",
+        "passK": null,
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals-ai.com/benchmarks/fabv2-1",
+      "sourceDate": "2026-11-09",
+      "readOn": "2026-11-09",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Dealbreaker-gated weighted partial credit with v2.1 question/rubric fixes, judge jury and hedging rules. This is not an all-pass-task rate and is not comparable with Finance Agent v2.",
+      "costUsd": 1.92,
+      "durationMinutes": 29.783
+    },
+    {
+      "id": "2001109f24ddd7a4c7",
+      "model": "muse-ember",
+      "benchmark": "Finance Agent v2.1",
+      "benchmarkVersion": "2.1",
+      "benchmarkId": "finance-agent-v2.1-vals",
+      "value": 63.83,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "Vals Finance Agent v2.1",
+        "tools": "edgar_search, web_search, parse_html_page, retrieve_information, calculator, price_history",
+        "passK": null,
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals-ai.com/benchmarks/fabv2-1",
+      "sourceDate": "2026-11-09",
+      "readOn": "2026-11-09",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Dealbreaker-gated weighted partial credit with v2.1 question/rubric fixes, judge jury and hedging rules. This is not an all-pass-task rate and is not comparable with Finance Agent v2.",
+      "costUsd": 0.06,
+      "durationMinutes": 1.489
     }
   ],
   "revisions": [
@@ -5167,6 +5655,21 @@
         "authorization": "Micah authorized updating the existing Surface ARM compilation from this Mac on October 26, 2026.",
         "scope": "New legal/finance benchmark versions, selected current Vals tables, Kimi and DeepSeek releases. Historical company claims retain their original read dates."
       }
+    },
+    {
+      "revision": 4,
+      "date": "2026-11-09",
+      "reason": "November 9 primary-source review: add Claude Fable 5.2, Gemini 4 Carbon (limited prerelease), GPT-6.1 Terra and Muse Ember; collect their four Vals benchmark results and refresh six Opus/Sonnet task-cost receipts. Prior scores and revision 01–03 snapshots are preserved.",
+      "snapshot": "snapshots/revision-04.json",
+      "reviewer": {
+        "harness": "codex",
+        "computer": "mac",
+        "model": null,
+        "readOn": "2026-11-09",
+        "previousRevision": 3,
+        "authorization": "Micah requested the GitHub AI-model update on November 9, 2026. The October 26 authorization to maintain this existing compilation from Mac remains in effect. Push and Pages publication await approval.",
+        "scope": "Four new model releases/announcements, 16 direct Vals observations and six publisher task-cost changes. Selected tracked scores on the four current Vals boards were checked; older company-table claims retain their original read dates."
+      }
     }
   ],
   "independence": {
@@ -5188,10 +5691,10 @@
     "harness": "codex",
     "computer": "mac",
     "model": null,
-    "readOn": "2026-10-26",
-    "previousRevision": 2,
-    "authorization": "Micah authorized updating the existing Surface ARM compilation from this Mac on October 26, 2026.",
-    "scope": "New legal/finance benchmark versions, selected current Vals tables, Kimi and DeepSeek releases. Historical company claims retain their original read dates."
+    "readOn": "2026-11-09",
+    "previousRevision": 3,
+    "authorization": "Micah requested the GitHub AI-model update on November 9, 2026. The October 26 authorization to maintain this existing compilation from Mac remains in effect. Push and Pages publication await approval.",
+    "scope": "Four new model releases/announcements, 16 direct Vals observations and six publisher task-cost changes. Selected tracked scores on the four current Vals boards were checked; older company-table claims retain their original read dates."
   },
   "benchmarkDefinitions": {
     "harvey-vals-held-out": {
@@ -5245,6 +5748,60 @@
       "readOn": "2026-10-26",
       "sourceDate": "2026-10-24",
       "note": "Existing selected model scores checked and unchanged; three additional model labels collected."
+    },
+    {
+      "sourceUrl": "https://www.vals-ai.com/benchmarks/terminal-bench-4",
+      "readOn": "2026-11-09",
+      "sourceDate": "2026-11-09",
+      "note": "Collected four new model rows. Previously collected numeric scores for this setup match the current table. Six task-cost changes across Terminal, Vibe Code and HLAB are recorded in the affected receipts; unchanged rows retain their original receipt dates. This is a selected compilation, not the complete Vals leaderboard."
+    },
+    {
+      "sourceUrl": "https://www.vals-ai.com/benchmarks/vibe-code",
+      "readOn": "2026-11-09",
+      "sourceDate": "2026-11-09",
+      "note": "Collected four new model rows. Previously collected numeric scores for this setup match the current table. Six task-cost changes across Terminal, Vibe Code and HLAB are recorded in the affected receipts; unchanged rows retain their original receipt dates. This is a selected compilation, not the complete Vals leaderboard."
+    },
+    {
+      "sourceUrl": "https://www.vals.ai/benchmarks/hlab",
+      "readOn": "2026-11-09",
+      "sourceDate": "2026-11-09",
+      "note": "Collected four new model rows. Previously collected numeric scores for this setup match the current table. Six task-cost changes across Terminal, Vibe Code and HLAB are recorded in the affected receipts; unchanged rows retain their original receipt dates. This is a selected compilation, not the complete Vals leaderboard."
+    },
+    {
+      "sourceUrl": "https://www.vals-ai.com/benchmarks/fabv2-1",
+      "readOn": "2026-11-09",
+      "sourceDate": "2026-11-09",
+      "note": "Collected four new model rows. Previously collected numeric scores for this setup match the current table. Six task-cost changes across Terminal, Vibe Code and HLAB are recorded in the affected receipts; unchanged rows retain their original receipt dates. This is a selected compilation, not the complete Vals leaderboard."
+    },
+    {
+      "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "readOn": "2026-11-09",
+      "sourceDate": "2026-11-09",
+      "note": "Primary announcement/release source verified for Claude Fable 5.2; availability qualification is retained in the model registry."
+    },
+    {
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "readOn": "2026-11-09",
+      "sourceDate": "2026-10-28",
+      "note": "Primary announcement/release source verified for Gemini 4 Carbon; availability qualification is retained in the model registry."
+    },
+    {
+      "sourceUrl": "https://developers.openai.com/api/docs/changelog",
+      "readOn": "2026-11-09",
+      "sourceDate": "2026-10-26",
+      "note": "Primary announcement/release source verified for GPT-6.1 Terra; availability qualification is retained in the model registry."
+    },
+    {
+      "sourceUrl": "https://research.meta.ai/blog/muse-ember",
+      "readOn": "2026-11-09",
+      "sourceDate": "2026-11-09",
+      "note": "Primary announcement/release source verified for Muse Ember; availability qualification is retained in the model registry."
+    },
+    {
+      "sourceUrl": "https://www.kimi.com/en/blog/kimi-k3-1-pro",
+      "readOn": "2026-11-09",
+      "sourceDate": null,
+      "note": "Page still states planned weights by November 4; no completed release inferred from the elapsed date."
     }
   ]
 }
