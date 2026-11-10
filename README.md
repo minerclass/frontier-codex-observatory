@@ -4,7 +4,7 @@ A standalone, local-first Codex contribution to Micah's Frontier Benchmark Atlas
 
 ## Current source revision
 
-Revision 04, reviewed from Mac on November 9, 2026: 24 model labels and 203 source observations. Adds Claude Fable 5.2, Gemini 4 Carbon, GPT-6.1 Terra and Muse Ember with 16 direct Vals results, plus six updated Opus/Sonnet task-cost receipts. Carbon is in limited prerelease access, not general availability. All earlier scores and revision 01–03 snapshots remain available. Original compiler provenance is intact; `latestReview` identifies the Mac reviewer. The update is prepared locally; push and Pages publication await Micah’s approval.
+Revision 04, reviewed from Mac on November 9, 2026: 24 model labels and 203 source observations. Adds Claude Fable 5.2, Gemini 4 Carbon, GPT-6.1 Terra and Muse Ember with 16 direct Vals results, plus six updated Opus/Sonnet task-cost receipts. Carbon is in limited prerelease access, not general availability. All earlier scores and revision 01–03 snapshots remain available. Original compiler provenance is intact; `latestReview` identifies the Mac reviewer. Micah approved the revision 04 GitHub push and resulting Pages publication on November 9, 2026.
 
 ## Review
 

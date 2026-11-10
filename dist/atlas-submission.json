@@ -1,5 +1,5 @@
 {
-  "status": "Published contribution; revision 4 prepared locally, pending push approval",
+  "status": "Published contribution; revision 4 approved for GitHub Pages publication",
   "id": "codex-surface-arm",
   "displayName": "Codex · Surface ARM",
   "model": null,
@@ -21,7 +21,8 @@
     "model": null,
     "readOn": "2026-11-09",
     "previousRevision": 3,
-    "authorization": "Micah requested the GitHub AI-model update on November 9, 2026. The October 26 authorization to maintain this existing compilation from Mac remains in effect. Push and Pages publication await approval.",
+    "authorization": "Micah requested the GitHub AI-model update on November 9, 2026, continuing the October 26 Mac maintenance authorization, and explicitly approved the GitHub push and resulting Pages publication after reviewing revision 4.",
     "scope": "Four new model releases/announcements, 16 direct Vals observations and six publisher task-cost changes. Selected tracked scores on the four current Vals boards were checked; older company-table claims retain their original read dates."
-  }
+  },
+  "latestPublicationApprovedOn": "2026-11-09"
 }
