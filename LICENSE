@@ -1,0 +1,40 @@
+This repository is dual-licensed to separate software from written content.
+
+- SOURCE CODE (HTML, CSS, JavaScript, Python, and configuration files) is
+  licensed under the MIT License, reproduced below.
+
+- WRITTEN CONTENT (the author's prose, explanations, diagrams, figures, and
+  the selection and arrangement of compiled material) is licensed under the
+  Creative Commons Attribution 4.0 International License (CC BY 4.0),
+  https://creativecommons.org/licenses/by/4.0/ . You may share and adapt it,
+  including for commercial and educational use, with attribution to
+  Micah J. Miner and a link to the source.
+
+Third-party material is not covered by either license. Data, benchmark
+results, survey data, quoted text, trademarks, typefaces, and bundled
+libraries remain under their owners' terms. See the README and the source
+links in this repository.
+
+------------------------------------------------------------------------
+
+MIT License
+
+Copyright (c) 2026 Micah J. Miner
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
