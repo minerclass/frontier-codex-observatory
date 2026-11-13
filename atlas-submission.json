@@ -1,5 +1,5 @@
 {
-  "status": "Revision 5 prepared locally; GitHub push and Pages publication await approval",
+  "status": "Revision 5 approved for GitHub push and Pages publication",
   "id": "codex-surface-arm",
   "displayName": "Codex · Surface ARM",
   "model": null,
@@ -21,8 +21,8 @@
     "model": null,
     "readOn": "2026-11-12",
     "previousRevision": 4,
-    "authorization": "Micah requested the Hydrogen, Carbon and other model update on November 12 and confirmed no other editor is active. Prepared locally for review; GitHub push and Pages publication await approval.",
+    "authorization": "Micah requested the Hydrogen, Carbon and other model update on November 12, confirmed no other editor was active, and explicitly approved the GitHub push and resulting Pages publication on November 13, 2026.",
     "scope": "Hydrogen model-card publication and access, four direct Vals results, eleven Google-published claim/rival-table values, and Carbon broader availability. Previous records and snapshots preserved."
   },
-  "latestPublicationApprovedOn": "2026-11-09"
+  "latestPublicationApprovedOn": "2026-11-13"
 }

@@ -6,7 +6,7 @@ Written on: surface-arm · codex · 2026-10-13
 
 Written on: surface-arm · codex · 2026-11-12
 
-Micah requested the Hydrogen/Carbon model update and confirmed no other editor is active. This review starts from current GitHub main (0e198dd), preserving the separate, diverged Surface ARM Developer checkout. Original compiler metadata stays unchanged. Push and Pages publication await approval.
+Micah requested the Hydrogen/Carbon model update and confirmed no other editor is active. This review starts from current GitHub main (0e198dd), preserving the separate, diverged Surface ARM Developer checkout. Original compiler metadata stays unchanged. Micah approved the GitHub push and resulting Pages publication on November 13, 2026.
 
 Hydrogen's official model card, published November 12, was read directly in the desktop browser after the web-fetch service could not retrieve it. The card describes a Carbon adaptation and lists distribution across Gemini app, API, AI Studio, Antigravity, Search and other channels. Google's Gemini Apps help page confirms plan-dependent access. Carbon's November 10 announcement expands access beyond the October 28 prerelease; its announcement date is preserved, with a separate availability date and source.
 
