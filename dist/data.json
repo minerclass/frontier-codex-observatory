@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "format": "codex-frontier-observatory-v1",
-  "revision": 4,
+  "revision": 5,
   "compiler": {
     "id": "codex-surface-arm",
     "harness": "codex",
@@ -185,7 +185,10 @@
       "maker": "Google",
       "releaseDate": "2026-10-28",
       "releaseSource": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
-      "note": "Announcement date, not general availability. Limited prerelease testing with government and selected cyber defenders through the Fairwind Program; broader access was still planned in the source read."
+      "note": "October 28 announcement retained. Broader availability announced November 10 across developers, enterprises and consumers, including paid API access and Google AI Ultra; channel, subscription and Fairwind cyber-access restrictions still apply. https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "availabilityDate": "2026-11-10",
+      "availabilitySource": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "availabilityReadOn": "2026-11-12"
     },
     {
       "slug": "gpt-6-1-terra",
@@ -202,6 +205,14 @@
       "releaseDate": "2026-11-09",
       "releaseSource": "https://research.meta.ai/blog/muse-ember",
       "note": "Available on Muse Code and the Meta Model API as muse-ember-1.0. Distinct from the unrelated Ember-1 label on the Vals boards; no scores from Ember-1 are imported."
+    },
+    {
+      "slug": "gemini-4-hydrogen",
+      "name": "Gemini 4 Hydrogen",
+      "maker": "Google",
+      "releaseDate": "2026-11-12",
+      "releaseSource": "https://deepmind.google/models/model-cards/gemini-4-hydrogen/",
+      "note": "Official model card published November 12; adapted from Carbon for faster execution. Distribution includes Gemini app, API, AI Studio, Antigravity and Search; access depends on channel and plan. The date records model-card publication, not a guarantee of rollout to every account."
     }
   ],
   "records": [
@@ -5626,6 +5637,422 @@
       "note": "Dealbreaker-gated weighted partial credit with v2.1 question/rubric fixes, judge jury and hedging rules. This is not an all-pass-task rate and is not comparable with Finance Agent v2.",
       "costUsd": 0.06,
       "durationMinutes": 1.489
+    },
+    {
+      "id": "rev05-hydrogen-terminal-bench-4.0-vals",
+      "model": "gemini-4-hydrogen",
+      "benchmark": "Terminal-Bench 4.0",
+      "benchmarkVersion": "4.0",
+      "benchmarkId": "terminal-bench-4.0-vals",
+      "value": 54.04,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "mini-swe-agent",
+        "tools": "bash",
+        "passK": "mean of three pass@1 runs",
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals-ai.com/benchmarks/terminal-bench-4",
+      "sourceDate": "2026-11-11",
+      "readOn": "2026-11-12",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Mean of three pass@1 runs on 66 tasks in mini-swe-agent, with an 8-hour task limit and all-or-nothing verification. These are Vals results, separate from company-published runs in other harnesses. No fallback-failure sensitivity score or effort level was collected for this row. Page prints Updated 11/11/2026; this is the publisher page date, not an individual run or Hydrogen release date. Read directly November 12.",
+      "costUsd": 7.56,
+      "durationMinutes": 30.667
+    },
+    {
+      "id": "rev05-hydrogen-finance-agent-v2.1-vals",
+      "model": "gemini-4-hydrogen",
+      "benchmark": "Finance Agent v2.1",
+      "benchmarkVersion": "2.1",
+      "benchmarkId": "finance-agent-v2.1-vals",
+      "value": 65.12,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "Vals Finance Agent v2.1",
+        "tools": "edgar_search, web_search, parse_html_page, retrieve_information, calculator, price_history",
+        "passK": null,
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals-ai.com/benchmarks/fabv2-1",
+      "sourceDate": "2026-11-11",
+      "readOn": "2026-11-12",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Dealbreaker-gated weighted partial credit with v2.1 question/rubric fixes, judge jury and hedging rules. This is not an all-pass-task rate and is not comparable with Finance Agent v2. Page prints Updated 11/11/2026; this is the publisher page date, not an individual run or Hydrogen release date. Read directly November 12.",
+      "costUsd": 4.36,
+      "durationMinutes": 17.967
+    },
+    {
+      "id": "rev05-hydrogen-hlab-vals-1.1",
+      "model": "gemini-4-hydrogen",
+      "benchmark": "HLAB-Vals-1.1",
+      "benchmarkVersion": "1.1",
+      "benchmarkId": "hlab-vals-1.1",
+      "value": 11.25,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "Harvey/Vals v1.1",
+        "tools": "Read File, Edit File, Write File, Glob, Bash, Grep; docx/pptx/xlsx skills",
+        "passK": null,
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals.ai/benchmarks/hlab",
+      "sourceDate": "2026-11-11",
+      "readOn": "2026-11-12",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Task resolution on the 120-task Harvey/Vals v1.1 holdout; every criterion must pass, with the two judge task-pass rates averaged. This is not criteria pass rate and is not comparable with archived v1 or Harvey LAB-AA. Page prints Updated 11/11/2026; this is the publisher page date, not an individual run or Hydrogen release date. Read directly November 12.",
+      "costUsd": 3.28,
+      "durationMinutes": 12.383
+    },
+    {
+      "id": "rev05-hydrogen-vibe-code-1.1-openhands-vals",
+      "model": "gemini-4-hydrogen",
+      "benchmark": "Vibe Code Bench v1.1",
+      "benchmarkVersion": "1.1",
+      "benchmarkId": "vibe-code-1.1-openhands-vals",
+      "value": 87.78,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "OpenHands",
+        "tools": null,
+        "passK": null,
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals-ai.com/benchmarks/vibe-code",
+      "sourceDate": "2026-11-11",
+      "readOn": "2026-11-12",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Mean application workflow-test success in OpenHands; a test needs at least 90% of its substeps to succeed. Separate from Composer Cursor CLI results. Page prints Updated 11/11/2026; this is the publisher page date, not an individual run or Hydrogen release date. Read directly November 12.",
+      "costUsd": 4.55,
+      "durationMinutes": 14.417
+    },
+    {
+      "id": "rev05-swe-sweep-gemini-4-hydrogen",
+      "model": "gemini-4-hydrogen",
+      "benchmark": "SWE-sweep",
+      "benchmarkVersion": null,
+      "benchmarkId": "google-hydrogen-swe-sweep",
+      "value": 13.5,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Google DeepMind",
+      "sourceType": "claim",
+      "setting": {
+        "effort": null,
+        "harness": null,
+        "tools": null,
+        "passK": null,
+        "fallback": null,
+        "printedSetup": null
+      },
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-hydrogen/",
+      "sourceDate": "2026-11-12",
+      "readOn": "2026-11-12",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Read directly from Google’s Hydrogen model-card table in the browser. Detailed evaluation PDF was linked but not readable in this review; unstated settings remain null. The value is attributed to the publishing table, not independently rerun by this project.",
+      "costUsd": null,
+      "durationMinutes": null
+    },
+    {
+      "id": "rev05-swe-sweep-claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "benchmark": "SWE-sweep",
+      "benchmarkVersion": null,
+      "benchmarkId": "google-hydrogen-swe-sweep",
+      "value": 3.1,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Google DeepMind",
+      "sourceType": "rival-table",
+      "setting": {
+        "effort": null,
+        "harness": null,
+        "tools": null,
+        "passK": null,
+        "fallback": null,
+        "printedSetup": null
+      },
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-hydrogen/",
+      "sourceDate": "2026-11-12",
+      "readOn": "2026-11-12",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Read directly from Google’s Hydrogen model-card table in the browser. Detailed evaluation PDF was linked but not readable in this review; unstated settings remain null. The value is attributed to the publishing table, not independently rerun by this project.",
+      "costUsd": null,
+      "durationMinutes": null
+    },
+    {
+      "id": "rev05-swe-sweep-gpt-6-1-terra",
+      "model": "gpt-6-1-terra",
+      "benchmark": "SWE-sweep",
+      "benchmarkVersion": null,
+      "benchmarkId": "google-hydrogen-swe-sweep",
+      "value": 5.8,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Google DeepMind",
+      "sourceType": "rival-table",
+      "setting": {
+        "effort": null,
+        "harness": null,
+        "tools": null,
+        "passK": null,
+        "fallback": null,
+        "printedSetup": null
+      },
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-hydrogen/",
+      "sourceDate": "2026-11-12",
+      "readOn": "2026-11-12",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Read directly from Google’s Hydrogen model-card table in the browser. Detailed evaluation PDF was linked but not readable in this review; unstated settings remain null. The value is attributed to the publishing table, not independently rerun by this project.",
+      "costUsd": null,
+      "durationMinutes": null
+    },
+    {
+      "id": "rev05-terminal-bench-4.1-adjusted-gemini-4-hydrogen",
+      "model": "gemini-4-hydrogen",
+      "benchmark": "Terminal-Bench 4.1",
+      "benchmarkVersion": "4.1",
+      "benchmarkId": "google-hydrogen-terminal-bench-4.1-adjusted",
+      "value": 57.0,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Google DeepMind",
+      "sourceType": "claim",
+      "setting": {
+        "effort": null,
+        "harness": null,
+        "tools": null,
+        "passK": null,
+        "fallback": null,
+        "printedSetup": "Cheating-adjusted"
+      },
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-hydrogen/",
+      "sourceDate": "2026-11-12",
+      "readOn": "2026-11-12",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Read directly from Google’s Hydrogen model-card table in the browser. Detailed evaluation PDF was linked but not readable in this review; unstated settings remain null. Terra is shown as a dash in this table; no Terra score is recorded. This cheating-adjusted 4.1 result is not the Vals 4.0 result.",
+      "costUsd": null,
+      "durationMinutes": null
+    },
+    {
+      "id": "rev05-terminal-bench-4.1-adjusted-claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "benchmark": "Terminal-Bench 4.1",
+      "benchmarkVersion": "4.1",
+      "benchmarkId": "google-hydrogen-terminal-bench-4.1-adjusted",
+      "value": 63.9,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Google DeepMind",
+      "sourceType": "rival-table",
+      "setting": {
+        "effort": null,
+        "harness": null,
+        "tools": null,
+        "passK": null,
+        "fallback": null,
+        "printedSetup": "Cheating-adjusted"
+      },
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-hydrogen/",
+      "sourceDate": "2026-11-12",
+      "readOn": "2026-11-12",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Read directly from Google’s Hydrogen model-card table in the browser. Detailed evaluation PDF was linked but not readable in this review; unstated settings remain null. Terra is shown as a dash in this table; no Terra score is recorded. This cheating-adjusted 4.1 result is not the Vals 4.0 result.",
+      "costUsd": null,
+      "durationMinutes": null
+    },
+    {
+      "id": "rev05-agents-last-exam-1.1-gemini-4-hydrogen",
+      "model": "gemini-4-hydrogen",
+      "benchmark": "Agents’ Last Exam v1.1",
+      "benchmarkVersion": "1.1",
+      "benchmarkId": "google-hydrogen-agents-last-exam-1.1",
+      "value": 71.6,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Google DeepMind",
+      "sourceType": "claim",
+      "setting": {
+        "effort": null,
+        "harness": null,
+        "tools": null,
+        "passK": null,
+        "fallback": null,
+        "printedSetup": "Score"
+      },
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-hydrogen/",
+      "sourceDate": "2026-11-12",
+      "readOn": "2026-11-12",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Read directly from Google’s Hydrogen model-card table in the browser. Detailed evaluation PDF was linked but not readable in this review; unstated settings remain null. The value is attributed to the publishing table, not independently rerun by this project.",
+      "costUsd": null,
+      "durationMinutes": null
+    },
+    {
+      "id": "rev05-agents-last-exam-1.1-claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "benchmark": "Agents’ Last Exam v1.1",
+      "benchmarkVersion": "1.1",
+      "benchmarkId": "google-hydrogen-agents-last-exam-1.1",
+      "value": 60.4,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Google DeepMind",
+      "sourceType": "rival-table",
+      "setting": {
+        "effort": null,
+        "harness": null,
+        "tools": null,
+        "passK": null,
+        "fallback": null,
+        "printedSetup": "Score"
+      },
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-hydrogen/",
+      "sourceDate": "2026-11-12",
+      "readOn": "2026-11-12",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Read directly from Google’s Hydrogen model-card table in the browser. Detailed evaluation PDF was linked but not readable in this review; unstated settings remain null. The value is attributed to the publishing table, not independently rerun by this project.",
+      "costUsd": null,
+      "durationMinutes": null
+    },
+    {
+      "id": "rev05-agents-last-exam-1.1-gpt-6-1-terra",
+      "model": "gpt-6-1-terra",
+      "benchmark": "Agents’ Last Exam v1.1",
+      "benchmarkVersion": "1.1",
+      "benchmarkId": "google-hydrogen-agents-last-exam-1.1",
+      "value": 69.8,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Google DeepMind",
+      "sourceType": "rival-table",
+      "setting": {
+        "effort": null,
+        "harness": null,
+        "tools": null,
+        "passK": null,
+        "fallback": null,
+        "printedSetup": "Score"
+      },
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-hydrogen/",
+      "sourceDate": "2026-11-12",
+      "readOn": "2026-11-12",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Read directly from Google’s Hydrogen model-card table in the browser. Detailed evaluation PDF was linked but not readable in this review; unstated settings remain null. The value is attributed to the publishing table, not independently rerun by this project.",
+      "costUsd": null,
+      "durationMinutes": null
+    },
+    {
+      "id": "rev05-osworld-2.1-offline-gemini-4-hydrogen",
+      "model": "gemini-4-hydrogen",
+      "benchmark": "OSWorld-2.1",
+      "benchmarkVersion": "2.1",
+      "benchmarkId": "google-hydrogen-osworld-2.1-offline",
+      "value": 77.6,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Google DeepMind",
+      "sourceType": "claim",
+      "setting": {
+        "effort": null,
+        "harness": null,
+        "tools": null,
+        "passK": null,
+        "fallback": null,
+        "printedSetup": "Offline subset"
+      },
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-hydrogen/",
+      "sourceDate": "2026-11-12",
+      "readOn": "2026-11-12",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Read directly from Google’s Hydrogen model-card table in the browser. Detailed evaluation PDF was linked but not readable in this review; unstated settings remain null. The value is attributed to the publishing table, not independently rerun by this project.",
+      "costUsd": null,
+      "durationMinutes": null
+    },
+    {
+      "id": "rev05-osworld-2.1-offline-claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "benchmark": "OSWorld-2.1",
+      "benchmarkVersion": "2.1",
+      "benchmarkId": "google-hydrogen-osworld-2.1-offline",
+      "value": 83.9,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Google DeepMind",
+      "sourceType": "rival-table",
+      "setting": {
+        "effort": null,
+        "harness": null,
+        "tools": null,
+        "passK": null,
+        "fallback": null,
+        "printedSetup": "Offline subset"
+      },
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-hydrogen/",
+      "sourceDate": "2026-11-12",
+      "readOn": "2026-11-12",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Read directly from Google’s Hydrogen model-card table in the browser. Detailed evaluation PDF was linked but not readable in this review; unstated settings remain null. The value is attributed to the publishing table, not independently rerun by this project.",
+      "costUsd": null,
+      "durationMinutes": null
+    },
+    {
+      "id": "rev05-osworld-2.1-offline-gpt-6-1-terra",
+      "model": "gpt-6-1-terra",
+      "benchmark": "OSWorld-2.1",
+      "benchmarkVersion": "2.1",
+      "benchmarkId": "google-hydrogen-osworld-2.1-offline",
+      "value": 74.2,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Google DeepMind",
+      "sourceType": "rival-table",
+      "setting": {
+        "effort": null,
+        "harness": null,
+        "tools": null,
+        "passK": null,
+        "fallback": null,
+        "printedSetup": "Offline subset"
+      },
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-hydrogen/",
+      "sourceDate": "2026-11-12",
+      "readOn": "2026-11-12",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Read directly from Google’s Hydrogen model-card table in the browser. Detailed evaluation PDF was linked but not readable in this review; unstated settings remain null. The value is attributed to the publishing table, not independently rerun by this project.",
+      "costUsd": null,
+      "durationMinutes": null
     }
   ],
   "revisions": [
@@ -5670,6 +6097,21 @@
         "authorization": "Micah requested the GitHub AI-model update on November 9, 2026, continuing the October 26 Mac maintenance authorization, and explicitly approved the GitHub push and resulting Pages publication after reviewing revision 4.",
         "scope": "Four new model releases/announcements, 16 direct Vals observations and six publisher task-cost changes. Selected tracked scores on the four current Vals boards were checked; older company-table claims retain their original read dates."
       }
+    },
+    {
+      "revision": 5,
+      "date": "2026-11-12",
+      "reason": "November 12 review: add Gemini 4 Hydrogen with four Vals results and eleven Google-published claim/rival-table values; distinguish cheating-adjusted Terminal-Bench 4.1 from Vals 4.0. Update Carbon to November 10 broader availability. All 203 previous records and revision 01–04 snapshots are preserved.",
+      "snapshot": "snapshots/revision-05.json",
+      "reviewer": {
+        "harness": "codex",
+        "computer": "surface-arm",
+        "model": null,
+        "readOn": "2026-11-12",
+        "previousRevision": 4,
+        "authorization": "Micah requested the Hydrogen, Carbon and other model update on November 12 and confirmed no other editor is active. Prepared locally for review; GitHub push and Pages publication await approval.",
+        "scope": "Hydrogen model-card publication and access, four direct Vals results, eleven Google-published claim/rival-table values, and Carbon broader availability. Previous records and snapshots preserved."
+      }
     }
   ],
   "independence": {
@@ -5689,12 +6131,12 @@
   },
   "latestReview": {
     "harness": "codex",
-    "computer": "mac",
+    "computer": "surface-arm",
     "model": null,
-    "readOn": "2026-11-09",
-    "previousRevision": 3,
-    "authorization": "Micah requested the GitHub AI-model update on November 9, 2026, continuing the October 26 Mac maintenance authorization, and explicitly approved the GitHub push and resulting Pages publication after reviewing revision 4.",
-    "scope": "Four new model releases/announcements, 16 direct Vals observations and six publisher task-cost changes. Selected tracked scores on the four current Vals boards were checked; older company-table claims retain their original read dates."
+    "readOn": "2026-11-12",
+    "previousRevision": 4,
+    "authorization": "Micah requested the Hydrogen, Carbon and other model update on November 12 and confirmed no other editor is active. Prepared locally for review; GitHub push and Pages publication await approval.",
+    "scope": "Hydrogen model-card publication and access, four direct Vals results, eleven Google-published claim/rival-table values, and Carbon broader availability. Previous records and snapshots preserved."
   },
   "benchmarkDefinitions": {
     "harvey-vals-held-out": {
@@ -5716,6 +6158,26 @@
       "status": "current",
       "label": "Finance Agent v2.1",
       "note": "Dealbreaker-gated weighted partial credit with revised questions/rubrics, new three-model judge jury and hedging rules. Not comparable with Finance Agent v2."
+    },
+    "google-hydrogen-swe-sweep": {
+      "status": "current",
+      "label": "SWE-sweep · Google Hydrogen table",
+      "note": "Google-published November 12 comparison. Own-lab and rival-table values retain Google’s table attribution. Do not equate this publisher setup with another evaluator’s run."
+    },
+    "google-hydrogen-terminal-bench-4.1-adjusted": {
+      "status": "current",
+      "label": "Terminal-Bench 4.1 · Google Hydrogen table",
+      "note": "Google-published November 12 comparison. Own-lab and rival-table values retain Google’s table attribution. Cheating-adjusted 4.1 is separate from Terminal-Bench 4.0 and 4.0-AA."
+    },
+    "google-hydrogen-agents-last-exam-1.1": {
+      "status": "current",
+      "label": "Agents’ Last Exam v1.1 · Google Hydrogen table",
+      "note": "Google-published November 12 comparison. Own-lab and rival-table values retain Google’s table attribution. Do not equate this publisher setup with another evaluator’s run."
+    },
+    "google-hydrogen-osworld-2.1-offline": {
+      "status": "current",
+      "label": "OSWorld-2.1 · Google Hydrogen table",
+      "note": "Google-published November 12 comparison. Own-lab and rival-table values retain Google’s table attribution. Do not equate this publisher setup with another evaluator’s run."
     }
   },
   "currentComparison": [
@@ -5802,6 +6264,24 @@
       "readOn": "2026-11-09",
       "sourceDate": null,
       "note": "Page still states planned weights by November 4; no completed release inferred from the elapsed date."
+    }
+  ],
+  "releaseUpdates": [
+    {
+      "model": "gemini-4-hydrogen",
+      "label": "New model card · November 12",
+      "summary": "Adapted from Carbon for speed and everyday agent work. Now listed across Google’s model and product documentation; availability depends on channel and plan.",
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-hydrogen/",
+      "sourceLabel": "Google model card",
+      "benchmarkId": "google-hydrogen-terminal-bench-4.1-adjusted",
+      "benchmarkLabel": "Inspect Google’s Terminal-Bench 4.1 table"
+    },
+    {
+      "model": "gemini-4-carbon",
+      "label": "Broader availability · November 10",
+      "summary": "Carbon has expanded beyond its initial prerelease. Google lists paid developer access and Ultra consumer access; specialized cyber capabilities retain separate access rules.",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "sourceLabel": "Google availability announcement"
     }
   ]
 }

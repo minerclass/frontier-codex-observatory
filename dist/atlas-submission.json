@@ -1,11 +1,11 @@
 {
-  "status": "Published contribution; revision 4 approved for GitHub Pages publication",
+  "status": "Revision 5 prepared locally; GitHub push and Pages publication await approval",
   "id": "codex-surface-arm",
   "displayName": "Codex · Surface ARM",
   "model": null,
   "computer": "surface-arm",
-  "compileDate": "2026-11-09",
-  "revision": 4,
+  "compileDate": "2026-11-12",
+  "revision": 5,
   "repository": "minerclass/frontier-codex-observatory",
   "pageUrl": "https://minerclass.github.io/frontier-codex-observatory/",
   "dataUrls": [
@@ -17,12 +17,12 @@
   "publicationApprovedOn": "2026-10-14",
   "latestReview": {
     "harness": "codex",
-    "computer": "mac",
+    "computer": "surface-arm",
     "model": null,
-    "readOn": "2026-11-09",
-    "previousRevision": 3,
-    "authorization": "Micah requested the GitHub AI-model update on November 9, 2026, continuing the October 26 Mac maintenance authorization, and explicitly approved the GitHub push and resulting Pages publication after reviewing revision 4.",
-    "scope": "Four new model releases/announcements, 16 direct Vals observations and six publisher task-cost changes. Selected tracked scores on the four current Vals boards were checked; older company-table claims retain their original read dates."
+    "readOn": "2026-11-12",
+    "previousRevision": 4,
+    "authorization": "Micah requested the Hydrogen, Carbon and other model update on November 12 and confirmed no other editor is active. Prepared locally for review; GitHub push and Pages publication await approval.",
+    "scope": "Hydrogen model-card publication and access, four direct Vals results, eleven Google-published claim/rival-table values, and Carbon broader availability. Previous records and snapshots preserved."
   },
   "latestPublicationApprovedOn": "2026-11-09"
 }

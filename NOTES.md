@@ -2,6 +2,34 @@ Written on: surface-arm · codex · 2026-10-13
 
 # Codex frontier model observatory
 
+## November 12, 2026 · Revision 05 source review
+
+Written on: surface-arm · codex · 2026-11-12
+
+Micah requested the Hydrogen/Carbon model update and confirmed no other editor is active. This review starts from current GitHub main (0e198dd), preserving the separate, diverged Surface ARM Developer checkout. Original compiler metadata stays unchanged. Push and Pages publication await approval.
+
+Hydrogen's official model card, published November 12, was read directly in the desktop browser after the web-fetch service could not retrieve it. The card describes a Carbon adaptation and lists distribution across Gemini app, API, AI Studio, Antigravity, Search and other channels. Google's Gemini Apps help page confirms plan-dependent access. Carbon's November 10 announcement expands access beyond the October 28 prerelease; its announcement date is preserved, with a separate availability date and source.
+
+Four Hydrogen results were read directly from Vals: Terminal-Bench 4.0, 54.04% ($7.56/task, 30m40s); Finance Agent v2.1, 65.12% ($4.36, 17m58s); HLAB-Vals-1.1, 11.25% ($3.28, 12m23s); Vibe Code v1.1/OpenHands, 87.78% ($4.55, 14m25s). Durations are converted to minutes, rounded to three decimals. Vals prints Updated 11/11/2026 on these pages even though this read and Google's card publication are November 12. The publisher's printed date is retained as a page date; it is not asserted to be the individual evaluation or release date. Unstated effort and fallback settings remain null.
+
+Eleven values were transcribed from four rows of Google's Hydrogen table: SWE-sweep, cheating-adjusted Terminal-Bench 4.1, Agents' Last Exam v1.1 and OSWorld-2.1 offline. Hydrogen values are own-lab claims; Sonnet 5.5 and Terra values are rival-table entries, attributed to Google. Terra's dash on Terminal-Bench 4.1 supplies no score and is not converted to zero. Google's detailed evaluation PDF was linked but not readable in this review, so no additional settings are inferred. The 4.1 cheating-adjusted setup has a distinct identifier from Vals 4.0 and earlier 4.0-AA results. Selected Google results are illustrative, not a complete transcription of its card.
+
+All 203 earlier observations, all original compiler metadata, revision 01–04 snapshots and the seven saved charts are preserved. There are now 25 labels and 218 observations, including the original three null values. Earlier company claims were not comprehensively reverified. No benchmark was executed.
+
+The official OpenAI news, Anthropic newsroom, Meta research, SpaceXAI news and Cursor blog surfaces were checked for additional relevant announcements. Fable 5.2, Terra and Muse Ember are already present in revision 04. No further comparable model release was confirmed in this bounded pass; this does not claim a complete industry inventory. Specialized media models and product features are outside the tracked comparison. The hub and other harness contributions were not edited.
+
+Sources read directly:
+
+- https://deepmind.google/models/model-cards/gemini-4-hydrogen/
+- https://support.google.com/gemini/answer/18648722?hl=en
+- https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/
+- https://www.vals-ai.com/benchmarks/terminal-bench-4
+- https://www.vals-ai.com/benchmarks/fabv2-1
+- https://www.vals.ai/benchmarks/hlab
+- https://www.vals.ai/benchmarks/vibe-code
+
+Validation details are recorded in docs/revision-05-validation.md.
+
 Harness: Codex. Computer: surface-arm, verified as MSURFACE32ARM64. Effective compiler model: not captured by this session. No named-model attribution is inferred from the scored model list or the app's available models.
 
 ## Request and interpretation

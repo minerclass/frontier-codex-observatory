@@ -49,11 +49,12 @@
   }).join('');
   function renderCurrent() {
     const rows = data.records.filter(row => row.benchmarkId === currentBenchmark.value && row.value !== null).sort((a,b) => b.value-a.value);
-    const note = data.benchmarkDefinitions?.[currentBenchmark.value]?.note || 'Selected published Vals results, checked November 9. Unchanged rows retain their original receipt dates. All bars use this benchmark setup.';
+    const note = data.benchmarkDefinitions?.[currentBenchmark.value]?.note || 'Selected published Vals results, checked November 12. Unchanged rows retain their original receipt dates. All bars use this benchmark setup.';
     document.getElementById('current-note').textContent = note;
     document.getElementById('current-comparison').innerHTML = `<ol class="score-bars" aria-label="Published scores, highest first">${rows.map(row => `<li><span class="score-name">${escape(modelMap.get(row.model).name)}</span><span class="score-track" aria-hidden="true"><span style="width:${row.value}%"></span></span><strong>${format(row)}</strong></li>`).join('')}</ol><p class="small quiet">0–100% scale · ${rows.length} collected model results · <a href="${escape(rows[0].sourceUrl)}" target="_blank" rel="noopener noreferrer">Read the Vals source ↗</a></p>`;
   }
   currentBenchmark.addEventListener('change', renderCurrent);
+  currentBenchmark.value = 'terminal-bench-4.0-vals';
   renderCurrent();
   const benchmark = document.getElementById('benchmark');
   const model = document.getElementById('model');
@@ -76,6 +77,11 @@
   renderRecords();
   document.getElementById('model-table').innerHTML = `<table><thead><tr><th scope="col">Model / label</th><th scope="col">Maker</th><th scope="col">Verified release / announcement</th><th scope="col">Surface or naming note</th></tr></thead><tbody>${data.models.map(model => `<tr><td><strong>${escape(model.name)}</strong></td><td>${escape(model.maker)}</td><td>${model.releaseDate ? `<a href="${escape(model.releaseSource)}" target="_blank" rel="noopener">${escape(model.releaseDate)}</a>` : 'Not verified'}</td><td>${escape(model.note)}</td></tr>`).join('')}</tbody></table>`;
   document.getElementById('revision-log').innerHTML = `<div class="compare-list section">${data.revisions.map(revision => `<article><h3>Revision ${String(revision.revision).padStart(2,'0')} · ${escape(revision.date)}</h3><p>${escape(revision.reason)}</p><a href="${escape(revision.snapshot)}">Review snapshot JSON →</a></article>`).join('')}</div>`;
+  document.getElementById('release-update-cards').innerHTML = data.releaseUpdates.map(update => `<article><div class="eyebrow">${escape(update.label)}</div><h3>${escape(modelMap.get(update.model).name)}</h3><p>${escape(update.summary)}</p><p><a href="${escape(update.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escape(update.sourceLabel)} ↗</a></p>${update.benchmarkId ? `<button type="button" data-benchmark="${escape(update.benchmarkId)}">${escape(update.benchmarkLabel)}</button>` : ''}</article>`).join('');
+  for (const button of document.querySelectorAll('[data-benchmark]')) button.addEventListener('click', () => {
+    benchmark.value = button.dataset.benchmark; model.value = 'all'; type.value = 'all'; renderRecords();
+    document.getElementById('records').scrollIntoView(); benchmark.focus({preventScroll:true});
+  });
   document.getElementById('download').addEventListener('click', () => {
     const url = URL.createObjectURL(new Blob([JSON.stringify(data,null,2) + '\n'], {type:'application/json'}));
     const anchor = document.createElement('a'); anchor.href = url; anchor.download = `codex-frontier-revision-${String(data.revision).padStart(2,'0')}.json`; anchor.click();
