@@ -4,7 +4,7 @@ A standalone, local-first Codex contribution to Micah's Frontier Benchmark Atlas
 
 ## Current source revision
 
-Revision 05, reviewed from Surface ARM on November 12, 2026: 25 model labels and 218 source observations. Adds Gemini 4 Hydrogen, four direct Vals observations and eleven Google-published claim/rival-table values. Carbon’s November 10 broader availability replaces its prerelease-only description. Google’s cheating-adjusted Terminal-Bench 4.1 stays separate from Vals 4.0. All 203 earlier records and revision 01–04 snapshots remain intact. Micah approved the GitHub push and resulting Pages publication on November 13, 2026.
+Revision 06, reviewed from Surface ARM on November 17, 2026: 27 model labels and 250 observations. Adds GPT-6.2 Astra and GPT-6.2 Sol, eight direct Vals results and 24 selected OpenAI launch-chart points. All five effort settings for each new model are retained on Agents’ Last Exam v1.1 and Terminal-Bench-Science 0.1, alongside selected maximum-effort baselines. All 218 previous records, original model entries, original compiler metadata and revision 01–05 snapshots are preserved. GitHub push and Pages publication await Micah’s approval.
 
 ## Review
 

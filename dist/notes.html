@@ -2,6 +2,38 @@
 
 # Codex frontier model observatory
 
+## November 17, 2026 · Revision 06 source review
+
+Written on: surface-arm · codex · 2026-11-17
+
+Micah requested an Astra 6.2 and Sol 6.2 update and confirmed no other editor is active. The review starts from published revision 05 (`e207d46`). Both new models were verified against OpenAI&#x27;s November 17 launch announcement. They are distinct labels; earlier GPT-6 Astra and GPT-6.1 Sol entries and results remain intact. Original compiler identity is preserved, with this review attributed separately to surface-arm/codex. Publication requires a new approval.
+
+Eight new independent observations were read directly from Vals&#x27; four existing setups. The pages print Updated 11/16/2026; that is retained as the publisher page date, not a release date or individual run date. Durations are converted from the printed time to minutes, rounded to three decimals. Unknown model effort and fallback remain null.
+
+| Vals setup | Astra 6.2 score / cost / duration | Sol 6.2 score / cost / duration |
+| --- | --- | --- |
+| Terminal-Bench 4.0, mini-swe-agent | 63.13% / $4.69 / 34m17s | 60.61% / $1.13 / 23m21s |
+| Finance Agent v2.1 | 60.75% / $7.98 / 37m38s | 58.91% / $2.06 / 21m58s |
+| HLAB-Vals-1.1 task pass | 16.25% / $7.33 / 50m09s | 12.08% / $2.25 / 27m00s |
+| Vibe Code v1.1, OpenHands | 89.90% / $7.92 / 44m12s | 87.62% / $3.23 / 47m51s |
+
+OpenAI&#x27;s interactive launch charts were read directly in the browser, using their accessible point labels rather than estimating positions on the axes. Two publisher-specific benchmark identifiers were added: Agents&#x27; Last Exam v1.1 and Terminal-Bench-Science 0.1. For each, all five Low/Medium/High/Xhigh/Max points for both new models are retained, plus the Max points for GPT-6 Astra and GPT-6.1 Sol. These 24 observations are OpenAI-published claims, separate from Vals results and Google&#x27;s existing chart setups. The launch is not an independent re-run by this project. Unstated harness, tools, pass@k and fallback remain null.
+
+Agents&#x27; Last Exam explicitly labels cost per task. The science chart labels its axis only Cost, so its dollar amounts are retained in receipt notes while the per-task cost field remains null. Selected charts were collected; other launch charts and specialized Astra for Law configurations were not added. Higher effort is not assumed to mean a higher score.
+
+All 218 earlier observations, all 25 earlier model entries, original compiler metadata, revision 01–05 snapshots and seven archived chart files remain unchanged. Revision 06 contains 27 labels and 250 observations: 247 numeric values and the same three existing null values. Older records retain their original read dates and were not comprehensively reverified. No benchmark was executed. The Atlas hub and other harness compilations were not edited.
+
+Direct sources:
+
+- https://openai.com/index/introducing-gpt-6-2-astra-sol/
+- https://openai.com/news/?q=2026 (November 17 release date)
+- https://www.vals.ai/benchmarks/terminal-bench-4
+- https://www.vals.ai/benchmarks/fabv2-1
+- https://www.vals.ai/benchmarks/hlab
+- https://www.vals.ai/benchmarks/vibe-code
+
+See docs/revision-06-validation.md for verification and remaining limits.
+
 ## November 12, 2026 · Revision 05 source review
 
 Written on: surface-arm · codex · 2026-11-12
