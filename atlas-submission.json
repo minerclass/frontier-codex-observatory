@@ -1,5 +1,5 @@
 {
-  "status": "Revision 6 prepared locally; GitHub push and Pages publication await approval",
+  "status": "Revision 6 approved for GitHub push and Pages publication",
   "id": "codex-surface-arm",
   "displayName": "Codex · Surface ARM",
   "model": null,
@@ -21,8 +21,8 @@
     "model": null,
     "readOn": "2026-11-17",
     "previousRevision": 5,
-    "authorization": "Micah requested the Astra 6.2 and Sol 6.2 update on November 17 and confirmed no other editor is active. Local review only; a new GitHub push and Pages publication require approval.",
+    "authorization": "Micah requested the Astra 6.2 and Sol 6.2 update on November 17 and confirmed no other editor is active. Micah approved the GitHub push and GitHub Pages publication on November 17, 2026.",
     "scope": "Two verified model releases, eight Vals observations and 24 selected OpenAI launch-chart observations. Prior records, models, compiler metadata and snapshots preserved."
   },
-  "latestPublicationApprovedOn": "2026-11-13"
+  "latestPublicationApprovedOn": "2026-11-17"
 }
