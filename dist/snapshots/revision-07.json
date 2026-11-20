@@ -7053,7 +7053,7 @@
     {
       "id": "rev07-swe-sweep-provider-gemini-4-neon",
       "model": "gemini-4-neon",
-      "benchmark": "SWE-sweep",
+      "benchmark": "SWE-sweep (provider harness, Google Neon table)",
       "benchmarkVersion": null,
       "benchmarkId": "google-neon-swe-sweep-provider",
       "value": 39.0,
@@ -7081,7 +7081,7 @@
     {
       "id": "rev07-swe-sweep-provider-claude-opus-5-5",
       "model": "claude-opus-5-5",
-      "benchmark": "SWE-sweep",
+      "benchmark": "SWE-sweep (provider harness, Google Neon table)",
       "benchmarkVersion": null,
       "benchmarkId": "google-neon-swe-sweep-provider",
       "value": 10.1,
@@ -7109,7 +7109,7 @@
     {
       "id": "rev07-swe-sweep-provider-gpt-6-2-sol",
       "model": "gpt-6-2-sol",
-      "benchmark": "SWE-sweep",
+      "benchmark": "SWE-sweep (provider harness, Google Neon table)",
       "benchmarkVersion": null,
       "benchmarkId": "google-neon-swe-sweep-provider",
       "value": 8.3,
@@ -7137,7 +7137,7 @@
     {
       "id": "rev07-swe-sweep-mini-swe-gemini-4-neon",
       "model": "gemini-4-neon",
-      "benchmark": "SWE-sweep",
+      "benchmark": "SWE-sweep (mini-swe-agent vision, Google Neon table)",
       "benchmarkVersion": null,
       "benchmarkId": "google-neon-swe-sweep-mini-swe",
       "value": 12.8,
@@ -7165,7 +7165,7 @@
     {
       "id": "rev07-swe-sweep-mini-swe-claude-opus-5-5",
       "model": "claude-opus-5-5",
-      "benchmark": "SWE-sweep",
+      "benchmark": "SWE-sweep (mini-swe-agent vision, Google Neon table)",
       "benchmarkVersion": null,
       "benchmarkId": "google-neon-swe-sweep-mini-swe",
       "value": 3.6,
@@ -7193,7 +7193,7 @@
     {
       "id": "rev07-swe-sweep-mini-swe-gpt-6-2-sol",
       "model": "gpt-6-2-sol",
-      "benchmark": "SWE-sweep",
+      "benchmark": "SWE-sweep (mini-swe-agent vision, Google Neon table)",
       "benchmarkVersion": null,
       "benchmarkId": "google-neon-swe-sweep-mini-swe",
       "value": 11.6,
@@ -7221,7 +7221,7 @@
     {
       "id": "rev07-agents-last-exam-1.1-gemini-4-neon",
       "model": "gemini-4-neon",
-      "benchmark": "Agents’ Last Exam v1.1",
+      "benchmark": "Agents’ Last Exam v1.1 (Google Neon table)",
       "benchmarkVersion": "1.1",
       "benchmarkId": "google-neon-agents-last-exam-1.1",
       "value": 75.8,
@@ -7249,7 +7249,7 @@
     {
       "id": "rev07-agents-last-exam-1.1-claude-opus-5-5",
       "model": "claude-opus-5-5",
-      "benchmark": "Agents’ Last Exam v1.1",
+      "benchmark": "Agents’ Last Exam v1.1 (Google Neon table)",
       "benchmarkVersion": "1.1",
       "benchmarkId": "google-neon-agents-last-exam-1.1",
       "value": 71.6,
@@ -7277,7 +7277,7 @@
     {
       "id": "rev07-agents-last-exam-1.1-gpt-6-2-sol",
       "model": "gpt-6-2-sol",
-      "benchmark": "Agents’ Last Exam v1.1",
+      "benchmark": "Agents’ Last Exam v1.1 (Google Neon table)",
       "benchmarkVersion": "1.1",
       "benchmarkId": "google-neon-agents-last-exam-1.1",
       "value": 73.0,
@@ -7305,7 +7305,7 @@
     {
       "id": "rev07-terminal-bench-science-0.1-gemini-4-neon",
       "model": "gemini-4-neon",
-      "benchmark": "Terminal-Bench-Science 0.1",
+      "benchmark": "Terminal-Bench-Science 0.1 (Google Neon table)",
       "benchmarkVersion": "0.1",
       "benchmarkId": "google-neon-terminal-bench-science-0.1",
       "value": 70.5,
@@ -7333,7 +7333,7 @@
     {
       "id": "rev07-terminal-bench-science-0.1-claude-opus-5-5",
       "model": "claude-opus-5-5",
-      "benchmark": "Terminal-Bench-Science 0.1",
+      "benchmark": "Terminal-Bench-Science 0.1 (Google Neon table)",
       "benchmarkVersion": "0.1",
       "benchmarkId": "google-neon-terminal-bench-science-0.1",
       "value": 63.3,
@@ -7361,7 +7361,7 @@
     {
       "id": "rev07-terminal-bench-science-0.1-gpt-6-2-sol",
       "model": "gpt-6-2-sol",
-      "benchmark": "Terminal-Bench-Science 0.1",
+      "benchmark": "Terminal-Bench-Science 0.1 (Google Neon table)",
       "benchmarkVersion": "0.1",
       "benchmarkId": "google-neon-terminal-bench-science-0.1",
       "value": 68.0,
