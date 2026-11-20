@@ -19,7 +19,7 @@ The Vals pages show a November 18 update date. The stored durations convert the 
 
 Google’s card supplies three values each for SWE-sweep in provider harnesses, SWE-sweep in the mini-swe-agent vision harness, Agents’ Last Exam v1.1, and Terminal-Bench-Science 0.1. Google’s methodology identifies its Neon harnesses and the sources it used for rival values. On science, Google averages Neon’s reward over five attempts per task. The Observatory identifies each Google setup by ID, and the Atlas groups by benchmark label. The four Google labels include the source table and identify the two SWE-sweep harness setups. Unreported per-task costs, durations, and settings are left empty.
 
-Revision 07 contains 28 model labels and 266 observations. It preserves the 250 revision 06 observations, 27 model entries, original compiler metadata, revision 01–06 snapshots, and initial chart archive. This was a review of published evidence. Revision 07 is prepared for local review and requires approval for publication.
+Revision 07 contains 28 model labels and 266 observations. It preserves the 250 revision 06 observations, 27 model entries, original compiler metadata, revision 01–06 snapshots, and initial chart archive. This was a review of published evidence. Micah approved the GitHub push and GitHub Pages publication on November 19, 2026.
 
 Direct sources:
 

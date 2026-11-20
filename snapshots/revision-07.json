@@ -7471,7 +7471,7 @@
         "model": null,
         "readOn": "2026-11-19",
         "previousRevision": 6,
-        "authorization": "Micah requested the Atlas model update on November 19, 2026. Local review pending approval for GitHub push and Pages publication.",
+        "authorization": "Micah requested the Atlas model update and approved the GitHub push and GitHub Pages publication on November 19, 2026.",
         "scope": "Add Gemini 4 Neon, four direct Vals observations and twelve Google DeepMind model-card observations. Verify coverage of GPT-6.2 Astra and Sol in the published Codex contribution."
       }
     }
@@ -7497,7 +7497,7 @@
     "model": null,
     "readOn": "2026-11-19",
     "previousRevision": 6,
-    "authorization": "Micah requested the Atlas model update on November 19, 2026. Local review pending approval for GitHub push and Pages publication.",
+    "authorization": "Micah requested the Atlas model update and approved the GitHub push and GitHub Pages publication on November 19, 2026.",
     "scope": "Add Gemini 4 Neon, four direct Vals observations and twelve Google DeepMind model-card observations. Verify coverage of GPT-6.2 Astra and Sol in the published Codex contribution."
   },
   "benchmarkDefinitions": {

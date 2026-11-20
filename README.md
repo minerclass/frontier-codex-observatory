@@ -4,7 +4,7 @@ A standalone, local-first Codex contribution to Micah's Frontier Benchmark Atlas
 
 ## Current source revision
 
-Revision 07, reviewed from Surface ARM on November 19, 2026, contains 28 model labels and 266 observations. It adds Gemini 4 Neon with four Vals results and twelve selected Google model-card values. GPT-6.2 Astra and GPT-6.2 Sol remain available in the comparison and evidence explorer. The 250 prior observations and revisions 01–06 snapshots are preserved. Revision 07 is ready for local review.
+Revision 07, reviewed from Surface ARM on November 19, 2026, contains 28 model labels and 266 observations. It adds Gemini 4 Neon with four Vals results and twelve selected Google model-card values. GPT-6.2 Astra and GPT-6.2 Sol remain available in the comparison and evidence explorer. The 250 prior observations and revisions 01–06 snapshots are preserved. Micah approved the GitHub push and GitHub Pages publication on November 19, 2026.
 
 ## Review
 
