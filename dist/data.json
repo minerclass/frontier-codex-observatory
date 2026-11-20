@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "format": "codex-frontier-observatory-v1",
-  "revision": 6,
+  "revision": 7,
   "compiler": {
     "id": "codex-surface-arm",
     "harness": "codex",
@@ -229,6 +229,14 @@
       "releaseDate": "2026-11-17",
       "releaseSource": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
       "note": "Released November 17 in ChatGPT Work, Codex and the API as gpt-6.2-sol. Enterprise/Edu access can require administrator enablement. Effort settings and Ultrafast serving are configurations, not separate models; earlier Astra/Sol labels remain available."
+    },
+    {
+      "slug": "gemini-4-neon",
+      "name": "Gemini 4 Neon",
+      "maker": "Google",
+      "releaseDate": "2026-11-18",
+      "releaseSource": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "note": "Google announced Gemini API access via AI Studio, Gemini for business, and rollout to Google AI Pro and Ultra subscribers in the Gemini app and Antigravity. DeepMind describes Neon as a Carbon adaptation with a 1M-token context window. https://deepmind.google/models/model-cards/gemini-4-neon/"
     }
   ],
   "records": [
@@ -6933,6 +6941,450 @@
       "note": "Transcribed from the accessible point label in OpenAI’s live launch chart. No benchmark was run by this project. Unstated harness, tools, attempt scoring and fallback stay null. The chart prints Cost $7.15 without an explicit per-task basis; no per-task cost is asserted. This science evaluation is distinct from Terminal-Bench 4.0 and 4.1.",
       "costUsd": null,
       "durationMinutes": null
+    },
+    {
+      "id": "rev07-neon-terminal-bench-4.0-vals",
+      "model": "gemini-4-neon",
+      "benchmark": "Terminal-Bench 4.0",
+      "benchmarkVersion": "4.0",
+      "benchmarkId": "terminal-bench-4.0-vals",
+      "value": 61.62,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "mini-swe-agent",
+        "tools": "bash",
+        "passK": "mean of three pass@1 runs",
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals.ai/benchmarks/terminal-bench-4",
+      "sourceDate": "2026-11-18",
+      "readOn": "2026-11-19",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Mean of three pass@1 runs in mini-swe-agent. The headline score uses Vals’ provider fallback policy. The November 18 date is the leaderboard update. Vals lists xhigh as Neon’s model default. The row does not identify a model-specific reasoning setting or fallback event.",
+      "costUsd": 6.42,
+      "durationMinutes": 36.1
+    },
+    {
+      "id": "rev07-neon-finance-agent-v2.1-vals",
+      "model": "gemini-4-neon",
+      "benchmark": "Finance Agent v2.1",
+      "benchmarkVersion": "2.1",
+      "benchmarkId": "finance-agent-v2.1-vals",
+      "value": 68.56,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "Vals Finance Agent v2.1",
+        "tools": "edgar_search, web_search, parse_html_page, retrieve_information, calculator, price_history",
+        "passK": null,
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals.ai/benchmarks/fabv2-1",
+      "sourceDate": "2026-11-18",
+      "readOn": "2026-11-19",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Dealbreaker-gated weighted partial credit in the v2.1 setup. The November 18 date is the leaderboard update. Vals lists xhigh as Neon’s model default. The row does not identify a model-specific reasoning setting or fallback event.",
+      "costUsd": 5.85,
+      "durationMinutes": 20.533
+    },
+    {
+      "id": "rev07-neon-hlab-vals-1.1",
+      "model": "gemini-4-neon",
+      "benchmark": "HLAB-Vals-1.1",
+      "benchmarkVersion": "1.1",
+      "benchmarkId": "hlab-vals-1.1",
+      "value": 19.58,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "Harvey/Vals v1.1",
+        "tools": "Read File, Edit File, Write File, Glob, Bash, Grep; docx/pptx/xlsx skills",
+        "passK": null,
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals.ai/benchmarks/hlab",
+      "sourceDate": "2026-11-18",
+      "readOn": "2026-11-19",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Task resolution on the 120-task holdout. Every criterion must pass, and Vals averages the two judges’ task pass rates. The November 18 date is the leaderboard update. Vals lists xhigh as Neon’s model default. The row does not identify a model-specific reasoning setting or fallback event.",
+      "costUsd": 5.97,
+      "durationMinutes": 22.85
+    },
+    {
+      "id": "rev07-neon-vibe-code-1.1-openhands-vals",
+      "model": "gemini-4-neon",
+      "benchmark": "Vibe Code Bench v1.1",
+      "benchmarkVersion": "1.1",
+      "benchmarkId": "vibe-code-1.1-openhands-vals",
+      "value": 93.7,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Vals AI",
+      "sourceType": "independent",
+      "setting": {
+        "effort": null,
+        "harness": "OpenHands",
+        "tools": null,
+        "passK": null,
+        "fallback": null
+      },
+      "sourceUrl": "https://www.vals.ai/benchmarks/vibe-code",
+      "sourceDate": "2026-11-18",
+      "readOn": "2026-11-19",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Mean application workflow-test success in OpenHands. A test passes when at least 90% of substeps succeed. The November 18 date is the leaderboard update. Vals lists xhigh as Neon’s model default. The row does not identify a model-specific reasoning setting or fallback event.",
+      "costUsd": 6.76,
+      "durationMinutes": 23.633
+    },
+    {
+      "id": "rev07-swe-sweep-provider-gemini-4-neon",
+      "model": "gemini-4-neon",
+      "benchmark": "SWE-sweep",
+      "benchmarkVersion": null,
+      "benchmarkId": "google-neon-swe-sweep-provider",
+      "value": 39.0,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Google DeepMind",
+      "sourceType": "claim",
+      "setting": {
+        "effort": "Highest thinking (Google methodology)",
+        "harness": "Antigravity CLI 1.5.9",
+        "tools": null,
+        "passK": "pass@1",
+        "fallback": null,
+        "printedSetup": "Provider harness · subtask-weighted reward"
+      },
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+      "sourceDate": "2026-11-18",
+      "readOn": "2026-11-19",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Google ran all three models in their respective provider harnesses. The result includes the harness and model. Methodology: https://deepmind.google/models/evals-methodology/gemini-4-neon/",
+      "costUsd": null,
+      "durationMinutes": null
+    },
+    {
+      "id": "rev07-swe-sweep-provider-claude-opus-5-5",
+      "model": "claude-opus-5-5",
+      "benchmark": "SWE-sweep",
+      "benchmarkVersion": null,
+      "benchmarkId": "google-neon-swe-sweep-provider",
+      "value": 10.1,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Google DeepMind",
+      "sourceType": "rival-table",
+      "setting": {
+        "effort": null,
+        "harness": "Claude Code",
+        "tools": null,
+        "passK": null,
+        "fallback": null,
+        "printedSetup": "Provider harness · subtask-weighted reward"
+      },
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+      "sourceDate": "2026-11-18",
+      "readOn": "2026-11-19",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Google ran all three models in their respective provider harnesses. The result includes the harness and model. Methodology: https://deepmind.google/models/evals-methodology/gemini-4-neon/",
+      "costUsd": null,
+      "durationMinutes": null
+    },
+    {
+      "id": "rev07-swe-sweep-provider-gpt-6-2-sol",
+      "model": "gpt-6-2-sol",
+      "benchmark": "SWE-sweep",
+      "benchmarkVersion": null,
+      "benchmarkId": "google-neon-swe-sweep-provider",
+      "value": 8.3,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Google DeepMind",
+      "sourceType": "rival-table",
+      "setting": {
+        "effort": null,
+        "harness": "Codex",
+        "tools": null,
+        "passK": null,
+        "fallback": null,
+        "printedSetup": "Provider harness · subtask-weighted reward"
+      },
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+      "sourceDate": "2026-11-18",
+      "readOn": "2026-11-19",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Google ran all three models in their respective provider harnesses. The result includes the harness and model. Methodology: https://deepmind.google/models/evals-methodology/gemini-4-neon/",
+      "costUsd": null,
+      "durationMinutes": null
+    },
+    {
+      "id": "rev07-swe-sweep-mini-swe-gemini-4-neon",
+      "model": "gemini-4-neon",
+      "benchmark": "SWE-sweep",
+      "benchmarkVersion": null,
+      "benchmarkId": "google-neon-swe-sweep-mini-swe",
+      "value": 12.8,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Google DeepMind",
+      "sourceType": "claim",
+      "setting": {
+        "effort": "Highest thinking (Google methodology)",
+        "harness": "mini-swe-agent vision",
+        "tools": null,
+        "passK": "pass@1",
+        "fallback": null,
+        "printedSetup": "Mini-SWE harness · subtask-weighted reward"
+      },
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+      "sourceDate": "2026-11-18",
+      "readOn": "2026-11-19",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Google ran all three models in the mini-swe-agent vision harness. Methodology: https://deepmind.google/models/evals-methodology/gemini-4-neon/",
+      "costUsd": null,
+      "durationMinutes": null
+    },
+    {
+      "id": "rev07-swe-sweep-mini-swe-claude-opus-5-5",
+      "model": "claude-opus-5-5",
+      "benchmark": "SWE-sweep",
+      "benchmarkVersion": null,
+      "benchmarkId": "google-neon-swe-sweep-mini-swe",
+      "value": 3.6,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Google DeepMind",
+      "sourceType": "rival-table",
+      "setting": {
+        "effort": null,
+        "harness": "mini-swe-agent vision",
+        "tools": null,
+        "passK": null,
+        "fallback": null,
+        "printedSetup": "Mini-SWE harness · subtask-weighted reward"
+      },
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+      "sourceDate": "2026-11-18",
+      "readOn": "2026-11-19",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Google ran all three models in the mini-swe-agent vision harness. Methodology: https://deepmind.google/models/evals-methodology/gemini-4-neon/",
+      "costUsd": null,
+      "durationMinutes": null
+    },
+    {
+      "id": "rev07-swe-sweep-mini-swe-gpt-6-2-sol",
+      "model": "gpt-6-2-sol",
+      "benchmark": "SWE-sweep",
+      "benchmarkVersion": null,
+      "benchmarkId": "google-neon-swe-sweep-mini-swe",
+      "value": 11.6,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Google DeepMind",
+      "sourceType": "rival-table",
+      "setting": {
+        "effort": null,
+        "harness": "mini-swe-agent vision",
+        "tools": null,
+        "passK": null,
+        "fallback": null,
+        "printedSetup": "Mini-SWE harness · subtask-weighted reward"
+      },
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+      "sourceDate": "2026-11-18",
+      "readOn": "2026-11-19",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Google ran all three models in the mini-swe-agent vision harness. Methodology: https://deepmind.google/models/evals-methodology/gemini-4-neon/",
+      "costUsd": null,
+      "durationMinutes": null
+    },
+    {
+      "id": "rev07-agents-last-exam-1.1-gemini-4-neon",
+      "model": "gemini-4-neon",
+      "benchmark": "Agents’ Last Exam v1.1",
+      "benchmarkVersion": "1.1",
+      "benchmarkId": "google-neon-agents-last-exam-1.1",
+      "value": 75.8,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Google DeepMind",
+      "sourceType": "claim",
+      "setting": {
+        "effort": "Highest thinking (Google methodology)",
+        "harness": "Antigravity CLI 1.4.8",
+        "tools": null,
+        "passK": "pass@1",
+        "fallback": null,
+        "printedSetup": "Average rubric score"
+      },
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+      "sourceDate": "2026-11-18",
+      "readOn": "2026-11-19",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Google ran Neon on 122 tasks with a five-hour window and safety filters enabled. Google cites the public leaderboard for Opus and the OpenAI system card for Sol. Methodology: https://deepmind.google/models/evals-methodology/gemini-4-neon/",
+      "costUsd": null,
+      "durationMinutes": null
+    },
+    {
+      "id": "rev07-agents-last-exam-1.1-claude-opus-5-5",
+      "model": "claude-opus-5-5",
+      "benchmark": "Agents’ Last Exam v1.1",
+      "benchmarkVersion": "1.1",
+      "benchmarkId": "google-neon-agents-last-exam-1.1",
+      "value": 71.6,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Google DeepMind",
+      "sourceType": "rival-table",
+      "setting": {
+        "effort": null,
+        "harness": null,
+        "tools": null,
+        "passK": null,
+        "fallback": null,
+        "printedSetup": "Average rubric score"
+      },
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+      "sourceDate": "2026-11-18",
+      "readOn": "2026-11-19",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Google ran Neon on 122 tasks with a five-hour window and safety filters enabled. Google cites the public leaderboard for Opus and the OpenAI system card for Sol. Methodology: https://deepmind.google/models/evals-methodology/gemini-4-neon/",
+      "costUsd": null,
+      "durationMinutes": null
+    },
+    {
+      "id": "rev07-agents-last-exam-1.1-gpt-6-2-sol",
+      "model": "gpt-6-2-sol",
+      "benchmark": "Agents’ Last Exam v1.1",
+      "benchmarkVersion": "1.1",
+      "benchmarkId": "google-neon-agents-last-exam-1.1",
+      "value": 73.0,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Google DeepMind",
+      "sourceType": "rival-table",
+      "setting": {
+        "effort": null,
+        "harness": null,
+        "tools": null,
+        "passK": null,
+        "fallback": null,
+        "printedSetup": "Average rubric score"
+      },
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+      "sourceDate": "2026-11-18",
+      "readOn": "2026-11-19",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Google ran Neon on 122 tasks with a five-hour window and safety filters enabled. Google cites the public leaderboard for Opus and the OpenAI system card for Sol. Methodology: https://deepmind.google/models/evals-methodology/gemini-4-neon/",
+      "costUsd": null,
+      "durationMinutes": null
+    },
+    {
+      "id": "rev07-terminal-bench-science-0.1-gemini-4-neon",
+      "model": "gemini-4-neon",
+      "benchmark": "Terminal-Bench-Science 0.1",
+      "benchmarkVersion": "0.1",
+      "benchmarkId": "google-neon-terminal-bench-science-0.1",
+      "value": 70.5,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Google DeepMind",
+      "sourceType": "claim",
+      "setting": {
+        "effort": "Highest thinking (Google methodology)",
+        "harness": "mini-swe-agent vision",
+        "tools": null,
+        "passK": "mean reward over five attempts per task",
+        "fallback": null,
+        "printedSetup": "Average Reward"
+      },
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+      "sourceDate": "2026-11-18",
+      "readOn": "2026-11-19",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Google averaged Neon’s reward over five attempts per task and sourced the two rival values from the official leaderboard. Methodology: https://deepmind.google/models/evals-methodology/gemini-4-neon/",
+      "costUsd": null,
+      "durationMinutes": null
+    },
+    {
+      "id": "rev07-terminal-bench-science-0.1-claude-opus-5-5",
+      "model": "claude-opus-5-5",
+      "benchmark": "Terminal-Bench-Science 0.1",
+      "benchmarkVersion": "0.1",
+      "benchmarkId": "google-neon-terminal-bench-science-0.1",
+      "value": 63.3,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Google DeepMind",
+      "sourceType": "rival-table",
+      "setting": {
+        "effort": null,
+        "harness": null,
+        "tools": null,
+        "passK": null,
+        "fallback": null,
+        "printedSetup": "Average Reward"
+      },
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+      "sourceDate": "2026-11-18",
+      "readOn": "2026-11-19",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Google averaged Neon’s reward over five attempts per task and sourced the two rival values from the official leaderboard. Methodology: https://deepmind.google/models/evals-methodology/gemini-4-neon/",
+      "costUsd": null,
+      "durationMinutes": null
+    },
+    {
+      "id": "rev07-terminal-bench-science-0.1-gpt-6-2-sol",
+      "model": "gpt-6-2-sol",
+      "benchmark": "Terminal-Bench-Science 0.1",
+      "benchmarkVersion": "0.1",
+      "benchmarkId": "google-neon-terminal-bench-science-0.1",
+      "value": 68.0,
+      "unit": "percent",
+      "higherIsBetter": true,
+      "publisher": "Google DeepMind",
+      "sourceType": "rival-table",
+      "setting": {
+        "effort": null,
+        "harness": null,
+        "tools": null,
+        "passK": null,
+        "fallback": null,
+        "printedSetup": "Average Reward"
+      },
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+      "sourceDate": "2026-11-18",
+      "readOn": "2026-11-19",
+      "sourceRead": true,
+      "origin": "published",
+      "note": "Google averaged Neon’s reward over five attempts per task and sourced the two rival values from the official leaderboard. Methodology: https://deepmind.google/models/evals-methodology/gemini-4-neon/",
+      "costUsd": null,
+      "durationMinutes": null
     }
   ],
   "revisions": [
@@ -7007,6 +7459,21 @@
         "authorization": "Micah requested the Astra 6.2 and Sol 6.2 update on November 17 and confirmed no other editor is active. Local review only; a new GitHub push and Pages publication require approval.",
         "scope": "Two verified model releases, eight Vals observations and 24 selected OpenAI launch-chart observations. Prior records, models, compiler metadata and snapshots preserved."
       }
+    },
+    {
+      "revision": 7,
+      "date": "2026-11-19",
+      "reason": "November 19 review: add Gemini 4 Neon with four direct Vals results and twelve selected Google DeepMind model-card values. Preserve the published GPT-6.2 Astra and GPT-6.2 Sol evidence and all earlier records.",
+      "snapshot": "snapshots/revision-07.json",
+      "reviewer": {
+        "harness": "codex",
+        "computer": "surface-arm",
+        "model": null,
+        "readOn": "2026-11-19",
+        "previousRevision": 6,
+        "authorization": "Micah requested the Atlas model update on November 19, 2026. Local review pending approval for GitHub push and Pages publication.",
+        "scope": "Add Gemini 4 Neon, four direct Vals observations and twelve Google DeepMind model-card observations. Verify coverage of GPT-6.2 Astra and Sol in the published Codex contribution."
+      }
     }
   ],
   "independence": {
@@ -7028,10 +7495,10 @@
     "harness": "codex",
     "computer": "surface-arm",
     "model": null,
-    "readOn": "2026-11-17",
-    "previousRevision": 5,
-    "authorization": "Micah requested the Astra 6.2 and Sol 6.2 update on November 17 and confirmed no other editor is active. Local review only; a new GitHub push and Pages publication require approval.",
-    "scope": "Two verified model releases, eight Vals observations and 24 selected OpenAI launch-chart observations. Prior records, models, compiler metadata and snapshots preserved."
+    "readOn": "2026-11-19",
+    "previousRevision": 6,
+    "authorization": "Micah requested the Atlas model update on November 19, 2026. Local review pending approval for GitHub push and Pages publication.",
+    "scope": "Add Gemini 4 Neon, four direct Vals observations and twelve Google DeepMind model-card observations. Verify coverage of GPT-6.2 Astra and Sol in the published Codex contribution."
   },
   "benchmarkDefinitions": {
     "harvey-vals-held-out": {
@@ -7083,6 +7550,26 @@
       "status": "current",
       "label": "Terminal-Bench-Science 0.1 · OpenAI 6.2 launch",
       "note": "OpenAI-published launch-chart claims. Five effort levels for each 6.2 model and maximum-effort baseline rows only. Separate from other publishers’ setups; higher effort need not produce a higher score."
+    },
+    "google-neon-swe-sweep-provider": {
+      "status": "current",
+      "label": "SWE-sweep · provider harness · Google Neon table",
+      "note": "Google ran all three models in their respective provider harnesses. The result includes the harness and model. The Google model-card table and its methodology identify this publisher setup."
+    },
+    "google-neon-swe-sweep-mini-swe": {
+      "status": "current",
+      "label": "SWE-sweep · mini-swe-agent · Google Neon table",
+      "note": "Google ran all three models in the mini-swe-agent vision harness. The Google model-card table and its methodology identify this publisher setup."
+    },
+    "google-neon-agents-last-exam-1.1": {
+      "status": "current",
+      "label": "Agents’ Last Exam v1.1 · Google Neon table",
+      "note": "Google ran Neon on 122 tasks with a five-hour window and safety filters enabled. Google cites the public leaderboard for Opus and the OpenAI system card for Sol. The Google model-card table and its methodology identify this publisher setup."
+    },
+    "google-neon-terminal-bench-science-0.1": {
+      "status": "current",
+      "label": "Terminal-Bench-Science 0.1 · Google Neon table",
+      "note": "Google averaged Neon’s reward over five attempts per task and sourced the two rival values from the official leaderboard. The Google model-card table and its methodology identify this publisher setup."
     }
   },
   "currentComparison": [
@@ -7199,9 +7686,67 @@
       "sourceDate": "2026-11-17",
       "readOn": "2026-11-17",
       "note": "Verified both releases and read selected Agents’ Last Exam and Terminal-Bench-Science launch-chart point labels directly in the browser. Other launch charts were not comprehensively transcribed."
+    },
+    {
+      "sourceUrl": "https://www.vals.ai/benchmarks/terminal-bench-4",
+      "sourceDate": "2026-11-18",
+      "readOn": "2026-11-19",
+      "note": "Read the Gemini 4 Neon leaderboard score, cost per test and duration per test directly. The date reflects the page update."
+    },
+    {
+      "sourceUrl": "https://www.vals.ai/benchmarks/fabv2-1",
+      "sourceDate": "2026-11-18",
+      "readOn": "2026-11-19",
+      "note": "Read the Gemini 4 Neon leaderboard score, cost per test and duration per test directly. The date reflects the page update."
+    },
+    {
+      "sourceUrl": "https://www.vals.ai/benchmarks/hlab",
+      "sourceDate": "2026-11-18",
+      "readOn": "2026-11-19",
+      "note": "Read the Gemini 4 Neon leaderboard score, cost per test and duration per test directly. The date reflects the page update."
+    },
+    {
+      "sourceUrl": "https://www.vals.ai/benchmarks/vibe-code",
+      "sourceDate": "2026-11-18",
+      "readOn": "2026-11-19",
+      "note": "Read the Gemini 4 Neon leaderboard score, cost per test and duration per test directly. The date reflects the page update."
+    },
+    {
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "sourceDate": "2026-11-18",
+      "readOn": "2026-11-19",
+      "note": "Verified the public rollout and model name."
+    },
+    {
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+      "sourceDate": "2026-11-18",
+      "readOn": "2026-11-19",
+      "note": "Read four rows directly from the November Google DeepMind model-card table, with own-lab and rival entries attributed to the table."
+    },
+    {
+      "sourceUrl": "https://deepmind.google/models/evals-methodology/gemini-4-neon/",
+      "sourceDate": null,
+      "readOn": "2026-11-19",
+      "note": "Verified method and upstream source attribution for the four selected table rows."
+    },
+    {
+      "sourceUrl": "https://www.vals.ai/models/google_gemini-4-neon",
+      "sourceDate": "2026-11-18",
+      "readOn": "2026-11-19",
+      "note": "Corroborated the Neon scores and read the model-level xhigh default. Benchmark-specific effort remains unconfirmed."
     }
   ],
   "releaseUpdates": [
+    {
+      "model": "gemini-4-neon",
+      "label": "New release · November 18",
+      "summary": "Google added Neon to its Gemini 4 lineup and began rolling it out across the Gemini app, AI Studio, Gemini for business and Antigravity. Explore its Vals results or Google’s model-card table.",
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+      "sourceLabel": "Google DeepMind model card",
+      "benchmarkId": "terminal-bench-4.0-vals",
+      "benchmarkLabel": "Inspect Neon’s Vals terminal result",
+      "modelFilter": "gemini-4-neon"
+    },
     {
       "model": "gpt-6-2-astra",
       "label": "New release · November 17",

@@ -4,7 +4,7 @@ A standalone, local-first Codex contribution to Micah's Frontier Benchmark Atlas
 
 ## Current source revision
 
-Revision 06, reviewed from Surface ARM on November 17, 2026: 27 model labels and 250 observations. Adds GPT-6.2 Astra and GPT-6.2 Sol, eight direct Vals results and 24 selected OpenAI launch-chart points. All five effort settings for each new model are retained on Agents’ Last Exam v1.1 and Terminal-Bench-Science 0.1, alongside selected maximum-effort baselines. All 218 previous records, original model entries, original compiler metadata and revision 01–05 snapshots are preserved. Micah approved the GitHub push and GitHub Pages publication on November 17, 2026.
+Revision 07, reviewed from Surface ARM on November 19, 2026, contains 28 model labels and 266 observations. It adds Gemini 4 Neon with four Vals results and twelve selected Google model-card values. GPT-6.2 Astra and GPT-6.2 Sol remain available in the comparison and evidence explorer. The 250 prior observations and revisions 01–06 snapshots are preserved. Revision 07 is ready for local review.
 
 ## Review
 

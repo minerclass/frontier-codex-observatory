@@ -49,7 +49,7 @@
   }).join('');
   function renderCurrent() {
     const rows = data.records.filter(row => row.benchmarkId === currentBenchmark.value && row.value !== null).sort((a,b) => b.value-a.value);
-    const note = data.benchmarkDefinitions?.[currentBenchmark.value]?.note || 'Selected published Vals results, 6.2 additions checked November 17. Unchanged rows retain their original receipt dates. All bars use this benchmark setup.';
+    const note = data.benchmarkDefinitions?.[currentBenchmark.value]?.note || 'Selected published Vals results. Open a source receipt to see when a result was collected. All bars use this benchmark setup.';
     document.getElementById('current-note').textContent = note;
     document.getElementById('current-comparison').innerHTML = `<ol class="score-bars" aria-label="Published scores, highest first">${rows.map(row => `<li><span class="score-name">${escape(modelMap.get(row.model).name)}</span><span class="score-track" aria-hidden="true"><span style="width:${row.value}%"></span></span><strong>${format(row)}</strong></li>`).join('')}</ol><p class="small quiet">0–100% scale · ${rows.length} collected model results · <a href="${escape(rows[0].sourceUrl)}" target="_blank" rel="noopener noreferrer">Read the Vals source ↗</a></p>`;
   }

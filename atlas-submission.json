@@ -1,11 +1,11 @@
 {
-  "status": "Revision 6 approved for GitHub push and Pages publication",
+  "status": "Revision 7 prepared for local review",
   "id": "codex-surface-arm",
   "displayName": "Codex · Surface ARM",
   "model": null,
   "computer": "surface-arm",
-  "compileDate": "2026-11-17",
-  "revision": 6,
+  "compileDate": "2026-11-19",
+  "revision": 7,
   "repository": "minerclass/frontier-codex-observatory",
   "pageUrl": "https://minerclass.github.io/frontier-codex-observatory/",
   "dataUrls": [
@@ -19,10 +19,10 @@
     "harness": "codex",
     "computer": "surface-arm",
     "model": null,
-    "readOn": "2026-11-17",
-    "previousRevision": 5,
-    "authorization": "Micah requested the Astra 6.2 and Sol 6.2 update on November 17 and confirmed no other editor is active. Micah approved the GitHub push and GitHub Pages publication on November 17, 2026.",
-    "scope": "Two verified model releases, eight Vals observations and 24 selected OpenAI launch-chart observations. Prior records, models, compiler metadata and snapshots preserved."
+    "readOn": "2026-11-19",
+    "previousRevision": 6,
+    "authorization": "Micah requested the Atlas model update on November 19, 2026. Local review pending approval for GitHub push and Pages publication.",
+    "scope": "Add Gemini 4 Neon, four direct Vals observations and twelve Google DeepMind model-card observations. Verify coverage of GPT-6.2 Astra and Sol in the published Codex contribution."
   },
   "latestPublicationApprovedOn": "2026-11-17"
 }

@@ -2,6 +2,36 @@
 
 # Codex frontier model observatory
 
+## November 19, 2026 · Revision 07 source review
+
+Written on: surface-arm · codex · 2026-11-19
+
+Google announced Gemini 4 Neon on November 18. The launch and model card confirm the rollout surfaces and identify Neon as a Carbon adaptation. The Atlas already loads the Codex contribution from GitHub main. Its published revision 06 includes GPT-6.2 Astra and GPT-6.2 Sol, with 14 observations for each at the start of this review.
+
+| Vals setup | Neon score | Cost per test | Duration per test |
+| --- | ---: | ---: | ---: |
+| Terminal-Bench 4.0, mini-swe-agent | 61.62% | $6.42 | 36m06s |
+| Finance Agent v2.1 | 68.56% | $5.85 | 20m32s |
+| HLAB-Vals-1.1 task pass | 19.58% | $5.97 | 22m51s |
+| Vibe Code Bench v1.1, OpenHands | 93.70% | $6.76 | 23m38s |
+
+The Vals pages show a November 18 update date. The stored durations convert the printed times to decimal minutes and round to three decimals. Vals lists xhigh as a model-level default, and the individual benchmark rows supply no model-specific effort or fallback event.
+
+Google’s card supplies three values each for SWE-sweep in provider harnesses, SWE-sweep in the mini-swe-agent vision harness, Agents’ Last Exam v1.1, and Terminal-Bench-Science 0.1. Google’s methodology identifies its Neon harnesses and the sources it used for rival values. On science, Google averages Neon’s reward over five attempts per task. The two Google tables for Agents’ Last Exam and science have separate benchmark IDs from OpenAI’s effort charts. Unreported per-task costs, durations, and settings are left empty.
+
+Revision 07 contains 28 model labels and 266 observations. It preserves the 250 revision 06 observations, 27 model entries, original compiler metadata, revision 01–06 snapshots, and initial chart archive. This was a review of published evidence. Revision 07 is prepared for local review and requires approval for publication.
+
+Direct sources:
+
+- https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/
+- https://deepmind.google/models/model-cards/gemini-4-neon/
+- https://deepmind.google/models/evals-methodology/gemini-4-neon/
+- https://www.vals.ai/models/google_gemini-4-neon
+- https://www.vals.ai/benchmarks/terminal-bench-4
+- https://www.vals.ai/benchmarks/fabv2-1
+- https://www.vals.ai/benchmarks/hlab
+- https://www.vals.ai/benchmarks/vibe-code
+
 ## November 17, 2026 · Revision 06 source review
 
 Written on: surface-arm · codex · 2026-11-17
